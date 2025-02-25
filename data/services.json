@@ -42,7 +42,7 @@
     ]
   },
   {
-    "icon": "RunningIcon",
+    "icon": "ActivityIcon",
     "title": "Orthopedic Physiotherapy",
     "description": "Treatment for musculoskeletal injuries, joint problems, and post-surgical rehabilitation.",
     "color": "green",

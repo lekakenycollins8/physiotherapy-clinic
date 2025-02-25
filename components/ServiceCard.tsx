@@ -1,43 +1,69 @@
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import type { LucideIcon } from "lucide-react"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import {
+  ArrowRight,
+  Activity as ActivityIcon,
+  Brain as BrainIcon,
+  Heart as HeartIcon,
+  Zap as ZapIcon,
+  Users as UsersIcon,
+  Home as HomeIcon,
+  Microscope as MicroscopeIcon,
+  LucideIcon,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import React from "react";
 
-interface ServiceCardProps {
-  icon: LucideIcon
-  title: string
-  description: string
-  color: string
-  slug: string
-  index?: number
+interface IconMap {
+  [key: string]: LucideIcon;
 }
 
-export function ServiceCard({ 
-  icon: Icon, 
-  title, 
-  description, 
-  color, 
+const iconMap: IconMap = {
+  ActivityIcon: ActivityIcon,
+  BrainIcon: BrainIcon,
+  HeartIcon: HeartIcon,
+  ZapIcon: ZapIcon,
+  UsersIcon: UsersIcon,
+  HomeIcon: HomeIcon,
+  MicroscopeIcon: MicroscopeIcon,
+};
+
+interface ServiceCardProps {
+  icon: keyof IconMap;
+  title: string;
+  description: string;
+  color: string;
+  slug: string;
+  index?: number;
+}
+
+export function ServiceCard({
+  icon,
+  title,
+  description,
+  color,
   slug,
-  index = 0 
+  index = 0,
 }: ServiceCardProps) {
+  const IconComponent = iconMap[icon];
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ 
-        duration: 0.5, 
+      transition={{
+        duration: 0.5,
         delay: index * 0.1,
-        ease: "easeOut" 
+        ease: "easeOut",
       }}
       viewport={{ once: true, margin: "-100px" }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
       className="relative overflow-hidden bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-100"
     >
       <div className="relative z-10">
-        <div 
+        <div
           className={`bg-${color}-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
         >
-          <Icon className={`w-8 h-8 text-${color}-500`} />
+          {IconComponent && <IconComponent className={`w-8 h-8 text-${color}-500`} />}
         </div>
         <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600 transition-colors duration-300">{title}</h3>
         <p className="text-gray-600 leading-relaxed mb-6">{description}</p>
@@ -64,5 +90,5 @@ export function ServiceCard({
         className={`absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-${color}-50/40 to-transparent rounded-tr-[100%] -z-0 opacity-0 group-hover:opacity-100 transition-all duration-500`}
       />
     </motion.div>
-  )
+  );
 }
