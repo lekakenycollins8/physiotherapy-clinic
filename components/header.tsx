@@ -1,8 +1,6 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Star } from "lucide-react";
 
 // Shadcn UI Components
 import { Button } from "@/components/ui/button";
@@ -18,168 +16,221 @@ import {
   SheetContent,
   SheetClose,
 } from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <span className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
-            PhysioWell
-          </span>
-        </Link>
-
-        {/* Desktop Navigation */}
-        <NavigationMenu>
-          <NavigationMenuList className="hidden md:flex items-center space-x-6">
-            <NavigationMenuItem>
-              <Link href="/" passHref>
-                <NavigationMenuLink className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                  Home
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/services" passHref>
-                <NavigationMenuLink className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                  Services
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/about" passHref>
-                <NavigationMenuLink className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                  About Us
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/team" passHref>
-                <NavigationMenuLink className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                  Team
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/testimonials" passHref>
-                <NavigationMenuLink className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                  Testimonials
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/gallery" passHref>
-                <NavigationMenuLink className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                  Gallery
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-
-        {/* Desktop Contact Button */}
-        <div className="hidden md:block">
-          <Link href="/contact" passHref>
-            <Button
-              className="animate-pulse"
-              style={{ animation: "heartbeat 1.5s ease-in-out infinite" }}
-            >
-              Contact
-            </Button>
-          </Link>
+    <>
+      {/* Topbar - visible only on desktop */}
+      <div className="hidden lg:block w-full bg-gray-900 px-5">
+        <div className="container mx-auto flex justify-between items-center h-12">
+          <div className="flex items-center space-x-4">
+            <a href="#" className="text-white flex items-center">
+              <MapPin className="text-blue-600 w-4 h-4 mr-2" />
+              <span className="text-sm">Find A Location</span>
+            </a>
+            <a href="#" className="text-white flex items-center">
+              <Phone className="text-blue-600 w-4 h-4 mr-2" />
+              <span className="text-sm">+01234567890</span>
+            </a>
+            <a href="#" className="text-white flex items-center">
+              <Mail className="text-blue-600 w-4 h-4 mr-2" />
+              <span className="text-sm">Example@gmail.com</span>
+            </a>
+          </div>
+          <div className="flex items-center space-x-3">
+            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+              <Facebook className="w-4 h-4 text-gray-700" />
+            </a>
+            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+              <Twitter className="w-4 h-4 text-gray-700" />
+            </a>
+            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+              <Instagram className="w-4 h-4 text-gray-700" />
+            </a>
+            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+              <Linkedin className="w-4 h-4 text-gray-700" />
+            </a>
+          </div>
         </div>
+      </div>
 
-        {/* Mobile Navigation using Sheet */}
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="ghost" className="md:hidden p-2">
-              <Menu className="h-6 w-6 text-gray-700" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="p-4">
-            <div className="flex justify-between items-center mb-4">
-              <Link href="/" className="text-2xl font-bold text-blue-600">
-                PhysioWell
-              </Link>
-              <SheetClose asChild>
-                <Button variant="ghost" className="p-2">
-                  <X className="h-6 w-6 text-gray-700" />
-                </Button>
-              </SheetClose>
-            </div>
-            <nav className="space-y-2">
-              <Link
-                href="/"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+      {/* Main Navbar */}
+      <header className="sticky top-0 z-50 bg-white shadow-sm">
+        <div className="container mx-auto px-4 lg:px-5 py-3 lg:py-4 flex justify-between items-center">
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <Star className="h-6 w-6 text-blue-600 mr-2" />
+            <span className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
+              PhysioWell
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <NavigationMenu className="hidden md:block">
+            <NavigationMenuList className="flex items-center space-x-6">
+              <NavigationMenuItem>
+                <Link href="/" passHref>
+                  <NavigationMenuLink className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    Home
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/services" passHref>
+                  <NavigationMenuLink className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    Services
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/about" passHref>
+                  <NavigationMenuLink className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    About Us
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              
+              {/* Dropdown Menu for Pages */}
+              <NavigationMenuItem>
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    Explore
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem>
+                      <Link href="/team" className="w-full">Team</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link href="/testimonials" className="w-full">Testimonials</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link href="/gallery" className="w-full">Gallery</Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <Link href="/contact" passHref>
+                  <NavigationMenuLink className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    Contact
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+
+          {/* Desktop Appointment Button */}
+          <div className="hidden md:block">
+            <Link href="/contact" passHref>
+              <Button
+                className="rounded-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white"
               >
-                Home
-              </Link>
-              <Link
-                href="/services"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Services
-              </Link>
-              <Link
-                href="/about"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                About Us
-              </Link>
-              <Link
-                href="/team"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Team
-              </Link>
-              <Link
-                href="/testimonials"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Testimonials
-              </Link>
-              <Link
-                href="/gallery"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Gallery
-              </Link>
-              <Link href="/contact" className="block mt-4">
-                <Button
-                  className="w-full animate-pulse"
-                  style={{ animation: "heartbeat 1.5s ease-in-out infinite" }}
+                Book Appointment
+              </Button>
+            </Link>
+          </div>
+
+          {/* Mobile Navigation using Sheet */}
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" className="md:hidden p-2">
+                <Menu className="h-6 w-6 text-gray-700" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="p-4">
+              <div className="flex justify-between items-center mb-4">
+                <Link href="/" className="flex items-center">
+                  <Star className="h-5 w-5 text-blue-600 mr-2" />
+                  <span className="text-xl font-bold text-blue-600">PhysioWell</span>
+                </Link>
+                <SheetClose asChild>
+                  <Button variant="ghost" className="p-2">
+                    <X className="h-6 w-6 text-gray-700" />
+                  </Button>
+                </SheetClose>
+              </div>
+              <nav className="space-y-2">
+                <Link
+                  href="/"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/services"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium"
+                >
+                  Services
+                </Link>
+                <Link
+                  href="/about"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium"
+                >
+                  About Us
+                </Link>
+                
+                {/* Collapsible Pages Menu */}
+                <div className="py-2">
+                  <button className="flex justify-between items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium">
+                    Pages
+                    <span>+</span>
+                  </button>
+                  <div className="pl-8 mt-1 space-y-1">
+                    <Link href="/team" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Team
+                    </Link>
+                    <Link href="/testimonials" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Testimonials
+                    </Link>
+                    <Link href="/gallery" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Gallery
+                    </Link>
+                    </div>
+                </div>
+                
+                <Link
+                  href="/contact"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium"
                 >
                   Contact
-                </Button>
-              </Link>
-            </nav>
-          </SheetContent>
-        </Sheet>
-      </div>
-      <style jsx>{`
-        @keyframes heartbeat {
-          0% {
-            transform: scale(1);
-          }
-          14% {
-            transform: scale(1.1);
-          }
-          28% {
-            transform: scale(1);
-          }
-          42% {
-            transform: scale(1.1);
-          }
-          70% {
-            transform: scale(1);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-      `}</style>
-    </header>
+                </Link>
+                
+                {/* Mobile Contact Info */}
+                <div className="mt-4 pt-4 border-t border-gray-200 space-y-2">
+                  <a href="#" className="flex items-center px-4 py-2 text-gray-700">
+                    <MapPin className="text-blue-600 w-4 h-4 mr-2" />
+                    <span className="text-sm">Find A Location</span>
+                  </a>
+                  <a href="#" className="flex items-center px-4 py-2 text-gray-700">
+                    <Phone className="text-blue-600 w-4 h-4 mr-2" />
+                    <span className="text-sm">+01234567890</span>
+                  </a>
+                  <a href="#" className="flex items-center px-4 py-2 text-gray-700">
+                    <Mail className="text-blue-600 w-4 h-4 mr-2" />
+                    <span className="text-sm">Example@gmail.com</span>
+                  </a>
+                </div>
+                
+                <Link href="/contact" className="block mt-4">
+                  <Button
+                    className="w-full rounded-full bg-blue-600 hover:bg-blue-700 text-white"
+                  >
+                    Book Appointment
+                  </Button>
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </header>
+    </>
   );
 };
 
