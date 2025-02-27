@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
+import { motion } from "framer-motion";
 
 const stats = [
   { number: "15+", label: "Years Experience" },
@@ -23,32 +26,48 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-magenta-900/80 to-transparent" />
       </div>
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           {/* Trusted Tag */}
-          <div className="inline-block bg-blue-500/20 backdrop-blur-md rounded-full px-4 py-2 mb-6 animate-fadeInUp">
+          <motion.div
+            className="inline-block bg-blue-500/20 backdrop-blur-md rounded-full px-4 py-2 mb-6"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <span className="text-white">✨ Trusted by 10,000+ patients</span>
-          </div>
+          </motion.div>
+
           {/* Headline */}
-          <h1
-            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fadeInUp"
-            style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.7)", animationDelay: "100ms", animationFillMode: "forwards" }}
+          <motion.h1
+            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.7)" }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
             Transform Your Life Through Expert{" "}
             <span className="text-gradient">Physiotherapy</span>
-          </h1>
+          </motion.h1>
+
           {/* Description */}
-          <p
-            className="text-xl text-white/90 mb-8 leading-relaxed animate-fadeInUp"
-            style={{ animationDelay: "200ms", animationFillMode: "forwards" }}
+          <motion.p
+            className="text-xl text-white/90 mb-8 leading-relaxed"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             Experience personalized care from certified physiotherapists. We're
             dedicated to helping you recover, strengthen, and thrive.
-          </p>
+          </motion.p>
+
           {/* Call-to-Actions */}
-          <div
-            className="flex flex-wrap gap-4 animate-fadeInUp"
-            style={{ animationDelay: "300ms", animationFillMode: "forwards" }}
+          <motion.div
+            className="flex flex-wrap gap-4"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -66,25 +85,31 @@ export function HeroSection() {
               <Phone className="mr-2" />
               Call Us Now
             </a>
-          </div>
+          </motion.div>
+
           {/* Statistics */}
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl">
+          <motion.div
+            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             {stats.map((stat, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="bg-white/10 backdrop-blur-md rounded-lg p-4 text-white animate-fadeInUp hover:shadow-lg"
-                style={{
-                  animationDelay: `${400 + index * 100}ms`,
-                  animationFillMode: "forwards",
-                }}
+                className="bg-white/10 backdrop-blur-md rounded-lg p-4 text-white hover:shadow-lg"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
               >
                 <div className="text-2xl font-bold">{stat.number}</div>
                 <div className="text-sm text-white/80">{stat.label}</div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
+
       {/* Bottom Gradient Overlay for Depth */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
