@@ -3,10 +3,40 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+// Team Members Data
+const teamMembers = [
+  {
+    name: "Dr. Jane Smith",
+    role: "Lead Physiotherapist",
+    image: "/placeholder.svg?height=400&width=400",
+    bio: "Dr. Jane Smith has over 15 years of experience in physiotherapy, specializing in sports injuries and rehabilitation.",
+  },
+  {
+    name: "John Doe",
+    role: "Orthopaedic Specialist",
+    image: "/placeholder.svg?height=400&width=400",
+    bio: "John Doe is our orthopaedic specialist with a focus on post-surgical rehabilitation. He has helped numerous patients recover.",
+  },
+  {
+    name: "Sarah Johnson",
+    role: "Sports Physiotherapist",
+    image: "/placeholder.svg?height=400&width=400",
+    bio: "Sarah Johnson has worked with professional athletes and specializes in injury prevention and performance enhancement.",
+  },
+  {
+    name: "Michael Brown",
+    role: "Neurological Physiotherapist",
+    image: "/placeholder.svg?height=400&width=400",
+    bio: "Michael Brown helps patients recover from strokes and spinal cord injuries, improving their quality of life.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <div className="py-16">
       <div className="container mx-auto px-4">
+        
+        {/* About Section */}
         <motion.h1
           className="text-4xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: 50 }}
@@ -39,63 +69,50 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-gray-600 mb-6">
-              At PhysioWell Clinic, our mission is to empower individuals to achieve optimal health and wellness through
-              expert physiotherapy care.
+              At PhysioWell Clinic, our mission is to empower individuals to achieve optimal health and wellness through expert physiotherapy care.
             </p>
             <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
             <p className="text-gray-600 mb-6">
-              We envision a community where everyone has access to high-quality physiotherapy services that enable them
-              to live active, pain-free lives.
+              We envision a community where everyone has access to high-quality physiotherapy services that enable them to live active, pain-free lives.
             </p>
           </motion.div>
         </motion.div>
 
+        {/* Team Section */}
         <motion.div
-          className="mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h2 className="text-3xl font-bold text-center mb-8">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { title: "Excellence", description: "We strive for excellence in all aspects of our practice." },
-              { title: "Compassion", description: "We approach each patient with empathy and understanding." },
-              { title: "Integrity", description: "We maintain the highest ethical standards in our practice." },
-            ].map((value, index) => (
+          <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {teamMembers.map((member, index) => (
               <motion.div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md"
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <h3 className="text-xl font-semibold mb-4">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={400}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-semibold">{member.name}</h3>
+                  <p className="text-gray-500 text-sm mb-3">{member.role}</p>
+                  <p className="text-gray-600">{member.bio}</p>
+                </div>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <h2 className="text-3xl font-bold text-center mb-8">Our Credentials</h2>
-          <p className="text-gray-600 text-center mb-8">
-            At PhysioWell Clinic, we take pride in our team of highly qualified and experienced physiotherapists.
-          </p>
-          <ul className="list-disc list-inside max-w-2xl mx-auto text-gray-600 space-y-2">
-            <li>Licensed and registered with the appropriate regulatory bodies</li>
-            <li>Holders of advanced degrees in physiotherapy</li>
-            <li>Continuously engaged in professional development and training</li>
-            <li>Experienced in treating a wide range of conditions and injuries</li>
-            <li>Committed to evidence-based practice and patient-centered care</li>
-          </ul>
-        </motion.div>
       </div>
     </div>
   );
 }
-

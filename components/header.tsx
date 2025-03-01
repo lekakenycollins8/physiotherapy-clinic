@@ -96,25 +96,6 @@ const Header = () => {
                 </Link>
               </NavigationMenuItem>
               
-              {/* Dropdown Menu for Pages */}
-              <NavigationMenuItem>
-                <DropdownMenu>
-                  <DropdownMenuTrigger className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
-                    Explore
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem>
-                      <Link href="/team" className="w-full">Team</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <Link href="/testimonials" className="w-full">Testimonials</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <Link href="/gallery" className="w-full">Gallery</Link>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </NavigationMenuItem>
               
               <NavigationMenuItem>
                 <Link href="/contact" passHref>
@@ -175,25 +156,6 @@ const Header = () => {
                 >
                   About Us
                 </Link>
-                
-                {/* Collapsible Pages Menu */}
-                <div className="py-2">
-                  <button className="flex justify-between items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium">
-                    Pages
-                    <span>+</span>
-                  </button>
-                  <div className="pl-8 mt-1 space-y-1">
-                    <Link href="/team" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Team
-                    </Link>
-                    <Link href="/testimonials" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Testimonials
-                    </Link>
-                    <Link href="/gallery" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Gallery
-                    </Link>
-                    </div>
-                </div>
                 
                 <Link
                   href="/contact"
