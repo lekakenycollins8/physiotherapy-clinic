@@ -12,7 +12,7 @@ export function ServicesSection() {
   return (
     <section
       aria-labelledby="services-heading"
-      className="py-20 relative overflow-hidden"
+      className="py-20 relative overflow-hidden bg-gradient-to-b from-blue-100 to-white"
     >
       {/* Decorative Background Elements */}
       <div
