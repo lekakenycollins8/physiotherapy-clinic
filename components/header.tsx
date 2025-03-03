@@ -64,12 +64,21 @@ const Header = () => {
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="container mx-auto px-4 lg:px-5 py-3 lg:py-4 flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Star className="h-6 w-6 text-blue-600 mr-2" />
-            <span className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
-              PhysioWell
-            </span>
-          </Link>
+            <Link href="/" className="flex items-center">
+            <img
+              src="/logo.jpg"
+              alt="MotionWorks Physiotherapy Logo"
+              className="h-16 w-auto mr-3"
+            />
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
+              MotionWorks
+              </span>
+              <span className="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
+              Physiotherapy
+              </span>
+            </div>
+            </Link>
 
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden md:block">
