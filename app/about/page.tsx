@@ -1,117 +1,126 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { MotionWrapper } from "@/components/MotionWrapper";
+import TeamMember from "@/components/TeamMember";
+import ValueCard from "@/components/ValueCard";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import { teamMembers, clinicValues } from "@/data/aboutPageData";
 
-// Team Members Data
-const teamMembers = [
-  {
-    name: "Dr. Jane Smith",
-    role: "Lead Physiotherapist",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Dr. Jane Smith has over 15 years of experience in physiotherapy, specializing in sports injuries and rehabilitation.",
-  },
-  {
-    name: "John Doe",
-    role: "Orthopaedic Specialist",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "John Doe is our orthopaedic specialist with a focus on post-surgical rehabilitation. He has helped numerous patients recover.",
-  },
-  {
-    name: "Sarah Johnson",
-    role: "Sports Physiotherapist",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Sarah Johnson has worked with professional athletes and specializes in injury prevention and performance enhancement.",
-  },
-  {
-    name: "Michael Brown",
-    role: "Neurological Physiotherapist",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Michael Brown helps patients recover from strokes and spinal cord injuries, improving their quality of life.",
-  },
-];
-
-export default function AboutPage() {
+export default function AboutPage(): JSX.Element {
   return (
-    <div className="py-16">
+    <div className="py-20 bg-gray-50 bg-gradient-to-b from-blue-100 to-white">
       <div className="container mx-auto px-4">
-        
         {/* About Section */}
-        <motion.h1
-          className="text-4xl font-bold text-center mb-12"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          About PhysioWell Clinic
-        </motion.h1>
-
-        <motion.div
-          className="flex flex-wrap items-center mb-16"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="PhysioWell Clinic"
-              width={800}
-              height={600}
-              className="rounded-lg"
-            />
-          </div>
-          <motion.div
-            className="w-full md:w-1/2 md:pl-12"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+        <ErrorBoundary>
+          <MotionWrapper
+            tagName="h1"
+            className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
+            ariaLevel={1}
+            tabIndex={0}
           >
-            <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-            <p className="text-gray-600 mb-6">
-              At PhysioWell Clinic, our mission is to empower individuals to achieve optimal health and wellness through expert physiotherapy care.
-            </p>
-            <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
-            <p className="text-gray-600 mb-6">
-              We envision a community where everyone has access to high-quality physiotherapy services that enable them to live active, pain-free lives.
-            </p>
-          </motion.div>
-        </motion.div>
+            Who We Are
+          </MotionWrapper>
+
+          <MotionWrapper
+            className="flex flex-col md:flex-row items-center mb-20 gap-8"
+            initialAnimation={{ opacity: 0, y: 50 }}
+            inViewAnimation={{ opacity: 1, y: 0 }}
+          >
+            <div
+              className="w-full md:w-1/2"
+              aria-label="Clinic Interior Image"
+            >
+              <Image
+                src="/physio2.avif?height=400&width=600"
+                alt="PhysioWell Clinic interior showing modern treatment area with physiotherapy equipment and comfortable seating"
+                width={800}
+                height={600}
+                className="rounded-lg shadow-lg"
+                priority={true}
+                loading="eager"
+              />
+            </div>
+            <MotionWrapper
+              className="w-full md:w-1/2 space-y-6 md:pl-12"
+              initialAnimation={{ opacity: 0, x: 50 }}
+              inViewAnimation={{ opacity: 1, x: 0 }}
+            >
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900" aria-level={2} tabIndex={0}>
+                  Our Mission
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  At PhysioWell Clinic, our mission is to empower individuals to achieve optimal health and wellness through expert physiotherapy care.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900" aria-level={2} tabIndex={0}>
+                  Our Vision
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  We envision a community where everyone has access to high-quality physiotherapy services that enable them to live active, pain-free lives.
+                </p>
+              </div>
+            </MotionWrapper>
+          </MotionWrapper>
+        </ErrorBoundary>
+
+        {/* Values Section */}
+        <ErrorBoundary>
+          <MotionWrapper
+            className="mb-20"
+            initialAnimation={{ opacity: 0, y: 50 }}
+            inViewAnimation={{ opacity: 1, y: 0 }}
+          >
+            <h2
+              className="text-3xl font-bold text-center mb-12 text-gray-900"
+              aria-level={2}
+              tabIndex={0}
+            >
+              Our Core Values
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {clinicValues.map((value, index) => (
+                <div
+                  key={index}
+                  className="transform transition-transform duration-300 hover:scale-105"
+                >
+                  <ValueCard value={value} index={index} />
+                </div>
+              ))}
+            </div>
+          </MotionWrapper>
+        </ErrorBoundary>
 
         {/* Team Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={400}
-                  height={400}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-semibold">{member.name}</h3>
-                  <p className="text-gray-500 text-sm mb-3">{member.role}</p>
-                  <p className="text-gray-600">{member.bio}</p>
+        <ErrorBoundary>
+          <MotionWrapper
+            className="mb-20"
+            initialAnimation={{ opacity: 0, y: 50 }}
+            inViewAnimation={{ opacity: 1, y: 0 }}
+            aria-labelledby="team-heading"
+          >
+            <h2
+              id="team-heading"
+              className="text-3xl font-bold text-center mb-12 text-gray-900"
+              aria-level={2}
+              tabIndex={0}
+            >
+              Meet Our Team
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" role="list">
+              {teamMembers.map((member, index) => (
+                <div
+                  key={index}
+                  className="transform transition-transform duration-300 hover:scale-105"
+                >
+                  <TeamMember member={member} index={index} />
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
+              ))}
+            </div>
+          </MotionWrapper>
+        </ErrorBoundary>
       </div>
     </div>
   );
