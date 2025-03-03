@@ -1,9 +1,10 @@
 "use client";
 
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const stats = [
   { number: "15+", label: "Years Experience" },
@@ -12,19 +13,46 @@ const stats = [
   { number: "4.9", label: "Patient Rating" },
 ];
 
+const backgroundImages = [
+  "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=2070",
+  "physio3.jpg" // Replace with your second image URL
+];
+
 export function HeroSection() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % backgroundImages.length);
+    }, 5000); // Change image every 5 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section role="banner" className="relative min-h-screen flex items-center">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=2070"
-          alt="Physiotherapy session with a professional"
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-          className="brightness-[0.85]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-magenta-900/80 to-transparent" />
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={currentImage}
+            className="absolute inset-0 z-0"
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: "easeOut", duration: 2 }}
+            whileInView={{ y: -20 }}
+            style={{ overflow: "hidden" }}
+          >
+            <Image
+              src={backgroundImages[currentImage]}
+              alt="Background image"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+              className="brightness-[0.85]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-magenta-900/80 to-transparent" />
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
