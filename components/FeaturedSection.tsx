@@ -1,33 +1,54 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, Star } from "lucide-react"
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Star } from "lucide-react";
+import { motion } from "framer-motion";
+import { WhyChooseUs } from "./WhyChooseUs";
 
 interface StatCardProps {
-  number: string
-  label: string
+  number: string;
+  label: string;
 }
 
 const StatCard = ({ number, label }: StatCardProps) => (
-  <div className="bg-white rounded-2xl p-6 text-center shadow-[0_8px_30px_rgb(0,0,0,0.06)]">
+  <motion.div
+    className="bg-white rounded-2xl p-6 text-center shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-2 border-transparent"
+    whileHover={{ scale: 1.05, borderColor: "#3b82f6", boxShadow: "0 12px 30px rgba(0,0,0,0.1)" }}
+    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+  >
     <div className="text-4xl font-bold text-blue-600 mb-2">{number}</div>
     <div className="text-gray-600">{label}</div>
-  </div>
-)
+  </motion.div>
+);
 
 export function FeaturedSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <motion.section
+      className="py-20 bg-gradient-to-b from-blue-1000 to-white"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative">
+          <motion.div
+            className="relative"
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10 }}
+          >
             <Image
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070"
+              src="/physio2.avif"
               alt="Physiotherapy treatment"
               width={600}
               height={800}
               className="rounded-2xl shadow-2xl"
             />
-            <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-xl max-w-sm">
+            <motion.div
+              className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-xl max-w-sm"
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
               <div className="flex items-center gap-4 mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=200"
@@ -49,13 +70,17 @@ export function FeaturedSection() {
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-            </div>
-          </div>
-          <div>
+            </motion.div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <h2 className="text-4xl font-bold mb-6">Why Choose PhysioWell?</h2>
             <p className="text-lg text-gray-600 mb-8">
-              We combine advanced therapeutic techniques with compassionate care to deliver outstanding results. Our
-              approach is personalized to your specific needs and goals.
+              We combine advanced therapeutic techniques with compassionate care to deliver outstanding results.
+              Our approach is personalized to your specific needs and goals.
             </p>
             <div className="grid grid-cols-2 gap-6 mb-8">
               {[
@@ -64,7 +89,14 @@ export function FeaturedSection() {
                 { number: "24/7", label: "Patient Support" },
                 { number: "50+", label: "Certified Experts" },
               ].map((stat, index) => (
-                <StatCard key={index} {...stat} />
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                >
+                  <StatCard {...stat} />
+                </motion.div>
               ))}
             </div>
             <div className="flex gap-4">
@@ -82,10 +114,11 @@ export function FeaturedSection() {
                 Meet Our Team
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
+        {/* Render the WhyChooseUs Component */}
+        <WhyChooseUs />
       </div>
-    </section>
-  )
+    </motion.section>
+  );
 }
-
