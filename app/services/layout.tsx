@@ -14,4 +14,3 @@ export default function ServicesLayout({
 }) {
   return <section>{children}</section>
 }
-
