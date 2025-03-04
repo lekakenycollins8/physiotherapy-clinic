@@ -108,7 +108,7 @@ export function FeaturedSection() {
                 <ArrowRight className="ml-2" />
               </Link>
               <Link
-                href="/team"
+                href="/about"
                 className="bg-gray-100 text-gray-800 px-6 py-3 rounded-full inline-flex items-center hover:bg-gray-200 transition-colors"
               >
                 Meet Our Team
