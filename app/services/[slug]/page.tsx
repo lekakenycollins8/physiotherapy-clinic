@@ -79,7 +79,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               href="/contact"
               className={`inline-block ${
                 color
-                  ? `bg-${color}-500 hover:bg-${color}-600`
+                  ? `bg-blue-500 hover:bg-${color}-600`
                   : "bg-blue-500 hover:bg-blue-600"
               } text-white px-6 py-3 rounded-full font-medium transition-colors duration-300`}
             >
