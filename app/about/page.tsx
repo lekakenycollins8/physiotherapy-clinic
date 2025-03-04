@@ -32,7 +32,7 @@ export default function AboutPage(): JSX.Element {
               aria-label="Clinic Interior Image"
             >
               <Image
-                src="/physio2.avif?height=400&width=600"
+                src="/physio2.avif"
                 alt="PhysioWell Clinic interior showing modern treatment area with physiotherapy equipment and comfortable seating"
                 width={800}
                 height={600}
