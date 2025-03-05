@@ -77,7 +77,12 @@ export function FeaturedSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl font-bold mb-6">Why Choose PhysioWell?</h2>
+            <h2 className="text-4xl font-bold mb-6 relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500">Why Choose MotionWorks?</h2>
             <p className="text-lg text-gray-600 mb-8">
               We combine advanced therapeutic techniques with compassionate care to deliver outstanding results.
               Our approach is personalized to your specific needs and goals.

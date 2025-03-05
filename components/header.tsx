@@ -30,17 +30,17 @@ const Header = () => {
       <div className="hidden lg:block w-full bg-gray-900 px-5">
         <div className="container mx-auto flex justify-between items-center h-12">
           <div className="flex items-center space-x-4">
-            <a href="#" className="text-white flex items-center">
+            <a href="/contact" className="text-white flex items-center">
               <MapPin className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">Find A Location</span>
+              <span className="text-sm">Travel House, Muindi Mbingu Street directly opposite City Hall. Annexe, 5th Floor</span>
             </a>
-            <a href="#" className="text-white flex items-center">
+            <a href="/contact" className="text-white flex items-center">
               <Phone className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">+01234567890</span>
+              <span className="text-sm">+254 706 143 886</span>
             </a>
-            <a href="#" className="text-white flex items-center">
+            <a href="/contact" className="text-white flex items-center">
               <Mail className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">Example@gmail.com</span>
+              <span className="text-sm">briyanbrian134@gmail.com</span>
             </a>
           </div>
           <div className="flex items-center space-x-3">

@@ -17,7 +17,12 @@ export default function ServicesPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4 relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500">
             Our Comprehensive Services
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">

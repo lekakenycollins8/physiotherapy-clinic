@@ -6,7 +6,12 @@ export default function ContactPage() {
     <div className="bg-gradient-to-br from-blue-100 to-white-100 py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-800 mb-4">Contact Us</h1>
+          <h1 className="text-5xl font-bold text-gray-800 mb-4 relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500">Reach Out</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">We're here to help with any questions you might have about our services. Reach out and we'll respond as soon as we can.</p>
         </div>
         
@@ -29,7 +34,7 @@ export default function ContactPage() {
                       id="name" 
                       name="name" 
                       className="pl-10 w-full py-3 border-gray-300 border rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-gray-50 transition duration-200" 
-                      placeholder="John Doe"
+                      placeholder="Your Name"
                       required 
                     />
                   </div>
@@ -48,7 +53,7 @@ export default function ContactPage() {
                       id="email" 
                       name="email" 
                       className="pl-10 w-full py-3 border-gray-300 border rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-gray-50 transition duration-200" 
-                      placeholder="john@example.com"
+                      placeholder="name@example.com"
                       required 
                     />
                   </div>
@@ -67,7 +72,8 @@ export default function ContactPage() {
                       id="phone" 
                       name="phone" 
                       className="pl-10 w-full py-3 border-gray-300 border rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-gray-50 transition duration-200" 
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="(+254) 712 345 678"
+                      required
                     />
                   </div>
                 </div>
@@ -107,7 +113,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Call Us</p>
-                    <p className="text-lg font-medium">+1 (555) 123-4567</p>
+                    <p className="text-lg font-medium">+254 706 143 886</p>
                   </div>
                 </div>
                 
@@ -117,7 +123,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Email Us</p>
-                    <p className="text-lg font-medium">info@physiowell.com</p>
+                    <p className="text-lg font-medium">briyanbrian134@gmail.com</p>
                   </div>
                 </div>
                 
@@ -127,8 +133,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Location</p>
-                    <p className="text-lg font-medium">123 Wellness Street</p>
-                    <p>Health City, HC 12345</p>
+                    <p className="text-lg font-medium">Travel House, Muindi Mbingu Street directly opposite City Hall</p>
+                    <p>Annexe, 5th Floor</p>
                   </div>
                 </div>
               </div>
@@ -137,7 +143,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-4">Our Location</h3>
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648718453!2d-73.98784568459395!3d40.74844797932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629794729599!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.812990292872!2d36.81883467507112!3d-1.2862474356262785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d7138a1b2b%3A0x8a79ba86a354be17!2sTravel%20House!5e0!3m2!1sen!2ske!4v1741182528233!5m2!1sen!2ske"
                     width="100%"
                     height="240"
                     style={{ border: 0 }}

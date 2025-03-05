@@ -15,7 +15,7 @@
   },
   {
     "icon": "BrainIcon",
-    "title": "Neurological Therapy",
+    "title": "Neurological Rehabilitation",
     "description": "Expert care for neurological conditions, helping patients regain function and improve quality of life.",
     "color": "purple",
     "slug": "neurological-therapy",
@@ -29,7 +29,7 @@
   },
   {
     "icon": "HeartIcon",
-    "title": "Cardiac Rehabilitation",
+    "title": "Cardiorespiratory Rehabilitation",
     "description": "Comprehensive programs designed to strengthen your heart and improve cardiovascular health.",
     "color": "red",
     "slug": "cardiac-rehabilitation",

@@ -53,7 +53,12 @@ export function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6">What Our Patients Say</h2>
+          <h2 className="text-4xl font-bold mb-6 relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500">What Our Patients Say</h2>
           <p className="text-gray-600 text-lg">
             Don't just take our word for it. Here's what our patients have to say about their experience with us.
           </p>

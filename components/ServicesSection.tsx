@@ -52,7 +52,12 @@ export function ServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600"
+            className="text-4xl font-bold mb-6 bg-clip-text text-transparent relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500"
           >
             Specialized Physiotherapy Services
           </motion.h2>
