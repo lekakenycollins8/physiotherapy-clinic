@@ -13,14 +13,19 @@ export default function AboutPage(): JSX.Element {
       <div className="container mx-auto px-4">
         {/* About Section */}
         <ErrorBoundary>
-          <MotionWrapper
+            <MotionWrapper
             tagName="h1"
-            className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
+            className="text-4xl md:text-5xl font-bold text-center mb-12 relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500"
             ariaLevel={1}
             tabIndex={0}
-          >
+            >
             Who We Are
-          </MotionWrapper>
+            </MotionWrapper>
 
           <MotionWrapper
             className="flex flex-col md:flex-row items-center mb-20 gap-8"
@@ -32,13 +37,13 @@ export default function AboutPage(): JSX.Element {
               aria-label="Clinic Interior Image"
             >
               <Image
-                src="/physio2.avif"
-                alt="PhysioWell Clinic interior showing modern treatment area with physiotherapy equipment and comfortable seating"
-                width={800}
-                height={600}
-                className="rounded-lg shadow-lg"
-                priority={true}
-                loading="eager"
+              src="/physio2.avif"
+              alt="PhysioWell Clinic interior showing modern treatment area with physiotherapy equipment and comfortable seating"
+              width={800}
+              height={600}
+              className="rounded-3xl shadow-lg"
+              priority={true}
+              loading="eager"
               />
             </div>
             <MotionWrapper
@@ -74,7 +79,12 @@ export default function AboutPage(): JSX.Element {
             inViewAnimation={{ opacity: 1, y: 0 }}
           >
             <h2
-              className="text-3xl font-bold text-center mb-12 text-gray-900"
+              className="text-3xl font-bold text-center mb-12 text-gray-900 relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500"
               aria-level={2}
               tabIndex={0}
             >
@@ -103,20 +113,25 @@ export default function AboutPage(): JSX.Element {
           >
             <h2
               id="team-heading"
-              className="text-3xl font-bold text-center mb-12 text-gray-900"
+              className="text-3xl font-bold text-center mb-12 text-gray-900 relative
+              bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+              after:content-[''] after:absolute after:w-48 after:h-1 after:bg-blue-500
+              after:bottom-0 after:left-1/2 after:-translate-x-1/2
+              after:transition-all after:duration-300 hover:after:w-64
+              hover:after:bg-purple-500"
               aria-level={2}
               tabIndex={0}
             >
               Meet Our Team
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" role="list">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto" role="list">
               {teamMembers.map((member, index) => (
-                <div
-                  key={index}
-                  className="transform transition-transform duration-300 hover:scale-105"
-                >
-                  <TeamMember member={member} index={index} />
-                </div>
+              <div
+                key={index}
+                className="w-full h-full transform transition-transform duration-300 hover:scale-105 shadow-lg rounded-lg overflow-hidden"
+              >
+                <TeamMember member={member} index={index} />
+              </div>
               ))}
             </div>
           </MotionWrapper>
