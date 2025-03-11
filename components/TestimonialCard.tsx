@@ -12,7 +12,7 @@ export function TestimonialCard({ name, role, image, quote }: TestimonialCardPro
   return (
     <div className="bg-white rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.06)]">
       <div className="flex items-center gap-4 mb-6">
-        <Image src={image || "/placeholder.svg"} alt={name} width={60} height={60} className="rounded-full" />
+        {/* <Image src={image || "/placeholder.svg"} alt={name} width={60} height={60} className="rounded-full" /> */}
         <div>
           <div className="font-semibold">{name}</div>
           <div className="text-sm text-gray-600">{role}</div>

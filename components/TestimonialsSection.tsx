@@ -9,25 +9,41 @@ import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
-    name: "Michael Chen",
+    name: "Constance",
     role: "Recovery Patient",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200",
     quote:
-      "The personalized care and attention I received was exceptional. My recovery exceeded my expectations.",
+      " I saw someone with a lumbar corset and she appeared very unsettled & uncomfortable. I remembered I have 2 of those yet none helped me! I also remembered the days when it seemed like nothing was working. There were No signs of improvement day in day out! I am sincerely grateful that you have helped me leave that level of pain and reach where i am now.Thank you! Good bless the work of your hands.",
   },
   {
-    name: "Emma Thompson",
-    role: "Sports Professional",
+    name: "Mulanya",
+    role: "Recovery Patient",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200",
     quote:
-      "As an athlete, finding the right physiotherapist is crucial. The team here understands exactly what athletes need.",
+      "I had the pleasure of being treated by Brian, an exceptional physiotherapist. His caring nature, empathy, and attentive listening made me feel truly supported throughout my recovery. Brian's meticulous attention to detail and expertise ensured a swift and effective rehabilitation. I highly recommend Brian to anyone seeking top-notch physiotherapy care.",
   },
   {
-    name: "David Wilson",
-    role: "Corporate Professional",
+    name: "Ann",
+    role: "Recovery Patient",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200",
     quote:
-      "Their expertise in treating my chronic back pain has made a tremendous difference in my daily life.",
+      "Nine months after my ankle ORIF surgery, I was still limping, in pain, and wondering—was I just destined to walk like a pirate forever? Brian to the rescue! I’ll admit, I wasn’t always the best at doing my home exercises, but he was incredibly patient and encouraging. No matter how painful a stretch was, he’d always say, “Slooowly”, as if that magically made it easier! With his help, I regained my mobility, strengthened my gait, and now I can even walk in heels! Thanks to Brian, I’m now pain-free and back on my feet, literally! Highly recommend!",
+  },
+  ,
+  {
+    name: "Joseph",
+    role: "Recovery Patient",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200",
+    quote:
+      "Motionworks Physiotherapy has been a lifesaver in my recovery journey. From the moment I walked in I felt listened to and supported.The team's experience and personalized approach will help you achieve your goals quicker than  anticipated.They took their time to fully understand my problem and develop a customized treatment plan tailored to my individual needs. My discomfort and mobility have significantly improved after only a few sessions. I highly recommend them to anyone in need of physiotherapy services."
+  },
+  ,
+  {
+    name: "Redempta",
+    role: "Recovery Patient",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200",
+    quote:
+      "I had the pleasure of receiving physiotherapy from Brian, and I couldn't be more grateful for the care and expertise he provided. From my very first visit, Brian made me feel comfortable and confident in my recovery journey. He took the time to thoroughly assess my condition and developed a personalized treatment plan that targeted my specific needs.Throughout my sessions, Brian was not only professional but also incredibly supportive and patient. His approach to physiotherapy is both effective and compassionate, and I could feel significant improvement with each visit. The clinic itself is welcoming and well-equipped, creating a great environment for healing. Thanks to Brian's dedication and skill, I am now experiencing far less pain and more mobility. I highly recommend Brian  to anyone in need of physiotherapy. I’m truly grateful for the positive impact this experience has had on my life.",
   },
 ];
 
@@ -75,13 +91,13 @@ export function TestimonialsSection() {
             {testimonials.map((testimonial, index) => (
               <div key={index} className="p-8 bg-white rounded-2xl shadow-md text-center">
                 <div className="flex flex-col items-center gap-4 mb-6">
-                  <Image
+                  {/* <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
                     width={60}
                     height={60}
                     className="rounded-full"
-                  />
+                  /> */}
                   <div>
                     <div className="font-semibold">{testimonial.name}</div>
                     <div className="text-sm text-gray-600">{testimonial.role}</div>

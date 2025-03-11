@@ -38,13 +38,13 @@ const Footer = () => {
           <div className="w-full md:w-1/3">
             <h3 className="text-lg font-semibold mb-2">Connect With Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-blue-600">
+              <a href="https://www.facebook.com/share/166DAkaVuM/" className="text-gray-600 hover:text-blue-600">
                 <Facebook />
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600">
+              <a href="https://x.com/MotionworksP?t=-mzwmz8IpMUh2vCuO0BBaA&s=09" className="text-gray-600 hover:text-blue-600">
                 <Twitter />
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600">
+              <a href="https://www.instagram.com/motionworksphysiotherapy?igsh=NjdjZjNyZ25rYXR2" className="text-gray-600 hover:text-blue-600">
                 <Instagram />
               </a>
             </div>
