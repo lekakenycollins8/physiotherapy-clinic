@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Menu, X, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Star } from "lucide-react";
+import { Menu, X, MapPin, Phone, Mail, Facebook, Twitter, Instagram,  Star } from "lucide-react";  
+import { FaTiktok } from "react-icons/fa";
 
 // Shadcn UI Components
 import { Button } from "@/components/ui/button";
@@ -44,17 +45,17 @@ const Header = () => {
             </a>
           </div>
           <div className="flex items-center space-x-3">
-            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+            <a href="https://www.facebook.com/share/166DAkaVuM/" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
               <Facebook className="w-4 h-4 text-gray-700" />
             </a>
-            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+            <a href="https://x.com/MotionworksP?t=-mzwmz8IpMUh2vCuO0BBaA&s=09" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
               <Twitter className="w-4 h-4 text-gray-700" />
             </a>
-            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+            <a href="https://www.instagram.com/motionworksphysiotherapy?igsh=NjdjZjNyZ25rYXR2" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
               <Instagram className="w-4 h-4 text-gray-700" />
             </a>
-            <a href="#" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
-              <Linkedin className="w-4 h-4 text-gray-700" />
+            <a href="https://www.tiktok.com/@motionworksphysio?_t=ZM-8uR34CIfwLm&_r=1" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+              <FaTiktok className="w-4 h-4 text-gray-700" />
             </a>
           </div>
         </div>
