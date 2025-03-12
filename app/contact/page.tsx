@@ -18,10 +18,10 @@ export default function ContactPage() {
     setLoading(true);
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_swcixg1', // EmailJS service ID
+        'template_b0n5j2d', // EmailJS template ID
         formData,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        '9sKdu7j5esa2bGv0J' // EmailJS public key
       );
       setSuccess('Message sent successfully!');
       setFormData({ name: '', email: '', phone: '', message: '' });
