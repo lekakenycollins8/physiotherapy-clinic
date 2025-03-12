@@ -105,7 +105,7 @@ export function HeroSection() {
               <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href="tel:+1234567890"
+              href="tel:+254706143886"
               aria-label="Call us now for immediate assistance"
               className="group bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 hover:shadow-lg"
             >
