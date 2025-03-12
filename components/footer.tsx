@@ -24,8 +24,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
             <ul>
               <li>
-                <Link href="/privacy-terms" className="hover:text-blue-600">
-                  Privacy Policy & Terms
+                <Link href="/services" className="hover:text-blue-600">
+                  Expert Physiotherapy Services
                 </Link>
               </li>
               <li>
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-200 mt-8 pt-8 text-sm text-center">
-          &copy; {new Date().getFullYear()} PhysioWell Clinic. All rights reserved.
+          &copy; {new Date().getFullYear()} MotionWorks Physiotherapy. All rights reserved.
         </div>
       </div>
     </footer>

@@ -66,7 +66,7 @@ export function BookingCTA() {
             </Link>
 
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/+254706143886"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300"
             >
               <MessageCircle className="mr-2" />

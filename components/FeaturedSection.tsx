@@ -50,20 +50,13 @@ export function FeaturedSection() {
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
               <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=200"
-                  alt="Patient"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
                 <div>
-                  <div className="font-semibold">Sarah Johnson</div>
-                  <div className="text-sm text-gray-600">Professional Athlete</div>
+                  <div className="font-semibold">Joseph</div>
+                  <div className="text-sm text-gray-600">Recovered Patient</div>
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "The team's expertise and dedication helped me recover fully and get back to competing at my best."
+                "I had the pleasure of being treated by Brian, an exceptional physiotherapist. His caring nature, empathy, and attentive listening made me feel truly supported throughout my recovery. Brian's meticulous attention to detail and expertise ensured a swift and effective rehabilitation. I highly recommend Brian to anyone seeking top-notch physiotherapy care."
               </p>
               <div className="flex gap-1 mt-4">
                 {[...Array(5)].map((_, i) => (
@@ -89,10 +82,9 @@ export function FeaturedSection() {
             </p>
             <div className="grid grid-cols-2 gap-6 mb-8">
               {[
-                { number: "15+", label: "Years of Excellence" },
                 { number: "98%", label: "Success Rate" },
                 { number: "24/7", label: "Patient Support" },
-                { number: "50+", label: "Certified Experts" },
+                { number: "3+", label: "Certified Experts" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}

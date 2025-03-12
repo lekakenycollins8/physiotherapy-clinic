@@ -37,8 +37,8 @@ export default function AboutPage(): JSX.Element {
               aria-label="Clinic Interior Image"
             >
               <Image
-              src="/physio2.avif"
-              alt="PhysioWell Clinic interior showing modern treatment area with physiotherapy equipment and comfortable seating"
+              src="/physiodoc.jpg"
+              alt="MotionWorks interior showing modern treatment area with physiotherapy equipment and comfortable seating"
               width={800}
               height={600}
               className="rounded-3xl shadow-lg"
@@ -56,7 +56,7 @@ export default function AboutPage(): JSX.Element {
                   Our Mission
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  At PhysioWell Clinic, our mission is to empower individuals to achieve optimal health and wellness through expert physiotherapy care.
+                  At MotionWorks, our mission is to empower individuals to achieve optimal health and wellness through expert physiotherapy care.
                 </p>
               </div>
               <div>

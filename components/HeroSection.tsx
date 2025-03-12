@@ -7,9 +7,8 @@ import { ArrowRight, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const stats = [
-  { number: "15+", label: "Years Experience" },
-  { number: "50+", label: "Expert Staff" },
-  { number: "10k+", label: "Happy Patients" },
+  { number: "3+", label: "Expert Staff" },
+  { number: "50+", label: "Happy Patients" },
   { number: "4.9", label: "Patient Rating" },
 ];
 
@@ -64,7 +63,7 @@ export function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-white">✨ Trusted by 10,000+ patients</span>
+            <span className="text-white">✨ Trusted by 50+ patients</span>
           </motion.div>
 
           {/* Headline */}
@@ -76,7 +75,7 @@ export function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             Transform Your Life Through Expert{" "}
-            <span className="text-gradient">Physiotherapy</span>
+            <span className="text-primary/90">Physiotherapy</span>
           </motion.h1>
 
           {/* Description */}
@@ -139,7 +138,7 @@ export function HeroSection() {
       </div>
 
       {/* Bottom Gradient Overlay for Depth */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32" />
     </section>
   );
 }

@@ -29,7 +29,7 @@ const PageHeader = ({ title, breadcrumbs = [] }: PageHeaderProps) => {
   return (
     <div className="w-full relative overflow-hidden">
       {/* Background pattern/overlay */}
-      <div className="absolute inset-0 bg-[url('/path-to-your-pattern.jpg')] bg-no-repeat bg-cover object-cover h-full w-full"></div>
+      <div className="absolute inset-0 bg-[url('/physiodoc2.jpg')] bg-no-repeat bg-cover object-cover h-full w-full"></div>
 
       <div
         className="container mx-auto text-center py-16 px-4 relative z-10"
