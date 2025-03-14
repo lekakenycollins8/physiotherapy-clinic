@@ -7,8 +7,6 @@ import { ArrowRight, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const stats = [
-  { number: "3+", label: "Expert Staff" },
-  { number: "50+", label: "Happy Patients" },
   { number: "4.9", label: "Patient Rating" },
 ];
 
@@ -63,7 +61,7 @@ export function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-white">✨ Trusted by 50+ patients</span>
+            <span className="text-white">✨ MotionWorks Your Trusted Physio Clinic</span>
           </motion.div>
 
           {/* Headline */}

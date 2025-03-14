@@ -139,7 +139,7 @@ const Header = () => {
               <div className="flex justify-between items-center mb-4">
                 <Link href="/" className="flex items-center">
                   <Star className="h-5 w-5 text-blue-600 mr-2" />
-                  <span className="text-xl font-bold text-blue-600">PhysioWell</span>
+                  <span className="text-xl font-bold text-blue-600">Motionworks Physiotherapy</span>
                 </Link>
                 <SheetClose asChild>
                   <Button variant="ghost" className="p-2">
@@ -182,7 +182,7 @@ const Header = () => {
                   </a>
                   <a href="#" className="flex items-center px-4 py-2 text-gray-700">
                     <Phone className="text-blue-600 w-4 h-4 mr-2" />
-                    <span className="text-sm">+01234567890</span>
+                    <span className="text-sm">+254 706 143 886</span>
                   </a>
                   <a href="#" className="flex items-center px-4 py-2 text-gray-700">
                     <Mail className="text-blue-600 w-4 h-4 mr-2" />

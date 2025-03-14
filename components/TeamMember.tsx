@@ -19,7 +19,7 @@ export default function TeamMember({ member, index }: TeamMemberProps): JSX.Elem
       hoverAnimation={{ scale: 1.05 }}
       tapAnimation={{ scale: 0.95 }}
       role="listitem"
-      ariaLabel={`Team member: ${member.name}, ${member.role}`}
+      ariaLabel={`Team member: ${member.name},`}
     >
       <MotionWrapper
         initialAnimation={{ opacity: 0 }}
@@ -36,7 +36,6 @@ export default function TeamMember({ member, index }: TeamMemberProps): JSX.Elem
       </MotionWrapper>
       <div className="p-6 text-center">
         <h3 className="text-xl font-semibold text-gray-900" tabIndex={0}>{member.name}</h3>
-        <p className="text-gray-700 text-sm mb-3">{member.role}</p>
         <p className="text-gray-800">{member.bio}</p>
       </div>
     </MotionWrapper>
