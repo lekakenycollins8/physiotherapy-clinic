@@ -36,6 +36,7 @@ export default function TeamMember({ member, index }: TeamMemberProps): JSX.Elem
       </MotionWrapper>
       <div className="p-6 text-center">
         <h3 className="text-xl font-semibold text-gray-900" tabIndex={0}>{member.name}</h3>
+        <p className="text-blue-600 font-medium mb-2">{member.role}</p>
         <p className="text-gray-800">{member.bio}</p>
       </div>
     </MotionWrapper>

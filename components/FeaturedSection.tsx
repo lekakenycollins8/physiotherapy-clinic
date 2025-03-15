@@ -45,7 +45,7 @@ export function FeaturedSection() {
               className="rounded-2xl shadow-2xl"
             />
             <motion.div
-              className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-xl max-w-sm"
+              className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-xl max-w-sm hidden md:block"
               whileHover={{ scale: 1.05, rotate: 2 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
