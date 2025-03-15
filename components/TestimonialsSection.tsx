@@ -17,7 +17,7 @@ const testimonials = [
   {
     name: "Mulanya",
     quote:
-      "I saw someone with a lumbar corset, and she appeared very unsettled & uncomfortable. I remembered I have two of those, yet none helped me! I also remembered the days when it seemed like nothing was working—no signs of improvement day in, day out! I felt tempted to whisper to her: 'You are in safe hands.' I am sincerely grateful that you have helped me leave that level of pain and reach where I am now. Thank you! God bless the work of your hands."
+      "I saw someone with a lumbar corset, and she appeared very unsettled & uncomfortable. I remembered I have two of those, yet none helped me! I also remembered the days when it seemed like nothing was working—no signs of improvement day in, day out! I am sincerely grateful that you have helped me leave that level of pain and reach where I am now."
   },
   {
     name: "Ann",
@@ -27,7 +27,7 @@ const testimonials = [
   {
     name: "Redempta",
     quote:
-      "I had the pleasure of receiving physiotherapy from Brian, and I couldn't be more grateful for the care and expertise he provided. Throughout my sessions, Brian was not only professional but also incredibly supportive and patient. His approach to physiotherapy is both effective and compassionate, and I could feel significant improvement with each visit. The clinic itself is welcoming and well-equipped, creating a great environment for healing. Thanks to Brian's dedication and skill, I am now experiencing far less pain and more mobility. I highly recommend Brian to anyone in need of physiotherapy. "
+      "I had the pleasure of receiving physiotherapy from Brian, and I couldn't be more grateful for the care and expertise he provided. Throughout my sessions, Brian was not only professional but also incredibly supportive and patient. The clinic itself is welcoming and well-equipped. Thanks to Brian's dedication and skill, I am now experiencing far less pain and more mobility. "
   }
 ];
 

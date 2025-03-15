@@ -45,7 +45,7 @@ export function HeroSection() {
               fill
               style={{ objectFit: "cover" }}
               priority
-              className="brightness-[0.55]"
+              className="brightness-[0.55] object-[center_top] md:object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-magenta-900/80 to-transparent" />
           </motion.div>

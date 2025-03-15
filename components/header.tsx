@@ -141,11 +141,6 @@ const Header = () => {
                   <Star className="h-5 w-5 text-blue-600 mr-2" />
                   <span className="text-xl font-bold text-blue-600">Motionworks Physiotherapy</span>
                 </Link>
-                <SheetClose asChild>
-                  <Button variant="ghost" className="p-2">
-                    <X className="h-6 w-6 text-gray-700" />
-                  </Button>
-                </SheetClose>
               </div>
               <nav className="space-y-2">
                 <Link
