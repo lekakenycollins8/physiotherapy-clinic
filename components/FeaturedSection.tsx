@@ -52,7 +52,6 @@ export function FeaturedSection() {
               <div className="flex items-center gap-4 mb-4">
                 <div>
                   <div className="font-semibold">Joseph</div>
-                  <div className="text-sm text-gray-600">Recovered Patient</div>
                 </div>
               </div>
               <p className="text-gray-600 italic">

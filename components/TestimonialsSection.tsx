@@ -11,25 +11,21 @@ const Slider = SliderType as any;
 const testimonials = [
   {
     name: "Constance",
-    role: "Patient",
     quote:
       "Hmmm! Today, I choose to give someone his flowers. I met Brian after several physiotherapy sessions without notable change in the excruciating back pain I was experiencing. His positive attitude, encouragement, follow-ups, and commitment quickly got me back on my feet, walking without aid and able to do what I couldn't do before. Brian, I am forever grateful. No doubt, you are a safe pair of hands."
   },
   {
     name: "Mulanya",
-    role: "Patient",
     quote:
       "I saw someone with a lumbar corset, and she appeared very unsettled & uncomfortable. I remembered I have two of those, yet none helped me! I also remembered the days when it seemed like nothing was working—no signs of improvement day in, day out! I am sincerely grateful that you have helped me leave that level of pain and reach where I am now."
   },
   {
     name: "Ann",
-    role: "Patient",
     quote:
       "Nine months after my ankle ORIF surgery, I was still limping, in pain, and wondering—was I just destined to walk like a pirate forever? Brian to the rescue! No matter how painful a stretch was, he'd always say, 'Slooowly,' as if that magically made it easier! With his help, I regained my mobility, strengthened my gait, and now I can even walk in heels! Thanks to Brian, I'm now pain-free and back on my feet—literally! Highly recommend!"
   },
   {
     name: "Redempta",
-    role: "Patient",
     quote:
       "I had the pleasure of receiving physiotherapy from Brian, and I couldn't be more grateful for the care and expertise he provided. Throughout my sessions, Brian was not only professional but also incredibly supportive and patient. The clinic itself is welcoming and well-equipped. Thanks to Brian's dedication and skill, I am now experiencing far less pain and more mobility. "
   }
@@ -82,7 +78,6 @@ export function TestimonialsSection() {
                 <div className="flex flex-col items-center gap-4 mb-6">
                   <div>
                     <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">{testimonial.role}</div>
                   </div>
                 </div>
                 <p className="text-gray-600 italic mb-6">"{testimonial.quote}"</p>
