@@ -72,7 +72,7 @@ export function ServiceCard({
           className={`text-${color}-500 font-medium group-hover:text-${color}-600 inline-flex items-center transition-all duration-300`}
         >
           <span className="border-b border-transparent group-hover:border-current">
-            Learn More
+            Learn More About {title}
           </span>
           <motion.span
             initial={{ x: 0 }}

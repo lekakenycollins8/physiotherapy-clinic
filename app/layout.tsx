@@ -41,12 +41,16 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.className} flex flex-col min-h-screen`}>
-        <Header />
-        {pathname !== "/" && <PageHeader title={pageTitle} />}
-        <main className="flex-grow">{children}</main>
-        <Footer />
-      </body>
-    </html>
+          <head>
+            <title>Motion Works Physiotherapy Clinic</title>
+            <meta name="description" content="Motion Works Physiotherapy Clinic - Your path to recovery and wellness." />
+          </head>
+          <body className={`${poppins.className} flex flex-col min-h-screen`}>
+            <Header />
+            {pathname !== "/" && <PageHeader title={pageTitle} />}
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </body>
+        </html>
   )
 }
