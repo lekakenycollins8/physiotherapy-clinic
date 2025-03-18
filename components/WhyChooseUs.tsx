@@ -4,18 +4,18 @@ import { CheckCircle } from "lucide-react"; // Example icon
 export function WhyChooseUs() {
   const cards = [
     {
-      title: "Licensed Physiotherapist",
-      info: "Our team is fully certified and experienced, ensuring you receive the highest quality care.",
+      title: "Experienced & Licensed Physiotherapists",
+      info: "Our team of fully certified and experienced physiotherapists are dedicated to providing the highest quality care. Trust our expertise for your optimal recovery.",
       icon: <CheckCircle className="w-8 h-8 text-blue-600" />,
     },
     {
-      title: "Personalized Treatment",
-      info: "We tailor each treatment plan to your specific needs for optimal recovery.",
+      title: "Personalized Physiotherapy Treatment Plans",
+      info: "We tailor each physiotherapy treatment plan to your specific needs, ensuring a personalized approach for optimal recovery and pain relief. Your individual goals are our priority.",
       icon: <CheckCircle className="w-8 h-8 text-blue-600" />,
     },
     {
-      title: "Therapy Goals",
-      info: "We work with you to set clear, achievable therapy goals that guide your progress.",
+      title: "Achievable Therapy Goals & Progress Tracking",
+      info: "We collaborate with you to set clear, achievable therapy goals and track your progress, empowering you on your journey to improved health and wellness. See tangible results with Motion Works.",
       icon: <CheckCircle className="w-8 h-8 text-blue-600" />,
     },
   ];

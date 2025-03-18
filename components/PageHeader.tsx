@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { getPageTitle } from "@/app/layout";
 import { ChevronRight } from "lucide-react";
 import "../styles/page-header.css";
 
@@ -96,21 +97,6 @@ function generateBreadcrumbs(pathname: string) {
   });
 
   return breadcrumbs;
-}
-
-// Helper function to generate page title from pathname
-function getPageTitle(pathname: string) {
-  if (!pathname) return "Home";
-
-  const segments = pathname.split("/").filter(Boolean);
-  if (segments.length === 0) return "Home";
-
-  const pageSlug = segments[segments.length - 1];
-
-  return pageSlug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
 }
 
 export default PageHeader;

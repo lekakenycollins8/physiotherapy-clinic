@@ -41,7 +41,7 @@ const Header = () => {
             </a>
             <a href="/contact" className="text-white flex items-center">
               <Mail className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">briyanbrian134@gmail.com</span>
+              <span className="text-sm">motionworksphysiotherapy@gmail.com</span>
             </a>
           </div>
           <div className="flex items-center space-x-3">

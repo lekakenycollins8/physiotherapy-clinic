@@ -1,114 +1,114 @@
 [
   {
     "icon": "ActivityIcon",
-    "title": "Sports Rehabilitation",
-    "description": "Specialized treatment for athletes, focusing on injury recovery and performance enhancement.",
+    "title": "Sports Injury Rehabilitation",
+    "description": "Recover faster and enhance your athletic performance with our specialized sports injury rehabilitation programs.",
     "color": "blue",
     "slug": "sports-rehabilitation",
-    "fullDescription": "Our Sports Rehabilitation program is designed to help athletes of all levels recover from injuries, improve performance, and prevent future issues. We use advanced techniques and state-of-the-art equipment to provide comprehensive care tailored to each athlete's specific needs and goals.",
+    "fullDescription": "Motion Works Physiotherapy offers a comprehensive Sports Rehabilitation program designed to help athletes of all levels recover from injuries, improve performance, and prevent future issues. Our expert physiotherapists use advanced techniques and state-of-the-art equipment to provide comprehensive care tailored to each athlete's specific needs and goals.",
     "benefits": [
       "Faster recovery from sports-related injuries",
       "Improved athletic performance",
       "Personalized training programs",
-      "Injury prevention strategies"
+      "Effective injury prevention strategies"
     ]
   },
   {
     "icon": "BrainIcon",
-    "title": "Neurological Rehabilitation",
-    "description": "Expert care for neurological conditions, helping patients regain function and improve quality of life e.g stroke",
+    "title": "Neurological Physiotherapy & Rehabilitation",
+    "description": "Regain function and improve your quality of life with our expert neurological physiotherapy and rehabilitation services for conditions like stroke.",
     "color": "purple",
     "slug": "neurological-therapy",
-    "fullDescription": "Our Neurological Therapy services cater to patients with various neurological conditions, including stroke, multiple sclerosis, and Parkinson's disease. We employ evidence-based techniques to help patients regain mobility, improve coordination, and enhance their overall quality of life e.g stroke",
+    "fullDescription": "Motion Works Physiotherapy's Neurological Therapy services cater to patients with various neurological conditions, including stroke, multiple sclerosis, and Parkinson's disease. Our specialized physiotherapists employ evidence-based techniques to help patients regain mobility, improve coordination, and enhance their overall quality of life.",
     "benefits": [
       "Improved mobility and balance",
       "Enhanced cognitive function",
       "Increased independence in daily activities",
-      "Personalized treatment plans"
+      "Personalized neurological treatment plans"
     ]
   },
   {
     "icon": "HeartIcon",
-    "title": "Cardiorespiratory Rehabilitation",
-    "description": "Comprehensive programs designed to strengthen your heart and improve cardiovascular health.",
+    "title": "Cardiac & Cardiorespiratory Physiotherapy",
+    "description": "Strengthen your heart and improve your cardiovascular health with our comprehensive cardiac and cardiorespiratory rehabilitation programs.",
     "color": "red",
     "slug": "cardiac-rehabilitation",
-    "fullDescription": "Our Cardiac Rehabilitation program is tailored for individuals recovering from heart-related conditions or surgeries. We focus on improving cardiovascular health through supervised exercise, education, and lifestyle modifications to help patients regain strength and confidence.",
+    "fullDescription": "Motion Works Physiotherapy's Cardiac Rehabilitation program is tailored for individuals recovering from heart-related conditions or surgeries. We focus on improving cardiovascular health through supervised exercise, education, and lifestyle modifications to help patients regain strength and confidence. Start your journey to a healthier heart today!",
     "benefits": [
       "Improved heart health and function",
       "Increased stamina and energy levels",
       "Reduced risk of future heart problems",
-      "Stress management techniques"
+      "Effective stress management techniques"
     ]
   },
   {
     "icon": "ActivityIcon",
-    "title": "Orthopedic Physiotherapy",
-    "description": "Treatment for musculoskeletal injuries, joint problems, and post-surgical rehabilitation.",
+    "title": "Orthopedic & Musculoskeletal Physiotherapy",
+    "description": "Recover from musculoskeletal injuries, joint problems, and surgeries with our specialized orthopedic physiotherapy treatments.",
     "color": "green",
     "slug": "orthopedic-physiotherapy",
-    "fullDescription": "Our Orthopedic Physiotherapy services address a wide range of musculoskeletal conditions, from sports injuries to chronic joint pain. We use manual therapy, exercise prescription, and advanced modalities to help patients recover function, reduce pain, and improve overall mobility.",
+    "fullDescription": "Motion Works Physiotherapy's Orthopedic Physiotherapy services address a wide range of musculoskeletal conditions, from sports injuries to chronic joint pain. Our skilled physiotherapists use manual therapy, exercise prescription, and advanced modalities to help patients recover function, reduce pain, and improve overall mobility.",
     "benefits": [
-      "Pain reduction and management",
+      "Effective pain reduction and management",
       "Improved joint mobility and flexibility",
       "Faster recovery from surgeries and injuries",
-      "Customized exercise programs"
+      "Customized exercise programs for orthopedic conditions"
     ]
   },
   {
     "icon": "ZapIcon",
-    "title": "Pain Management",
-    "description": "Advanced techniques to alleviate chronic pain and improve overall well-being.",
+    "title": "Chronic Pain Management Physiotherapy",
+    "description": "Alleviate chronic pain and improve your overall well-being with our advanced pain management physiotherapy techniques.",
     "color": "yellow",
     "slug": "pain-management",
-    "fullDescription": "Our Pain Management program utilizes a multidisciplinary approach to help patients dealing with chronic pain conditions. We combine physical therapy techniques with education and lifestyle modifications to reduce pain, improve function, and enhance quality of life.",
+    "fullDescription": "Motion Works Physiotherapy's Pain Management program utilizes a multidisciplinary approach to help patients dealing with chronic pain conditions. We combine physical therapy techniques with education and lifestyle modifications to reduce pain, improve function, and enhance quality of life. Reclaim your life from chronic pain!",
     "benefits": [
       "Reduced chronic pain symptoms",
-      "Improved daily functioning",
+      "Improved daily functioning and mobility",
       "Decreased reliance on pain medications",
-      "Stress reduction and relaxation techniques"
+      "Effective stress reduction and relaxation techniques"
     ]
   },
   {
     "icon": "UsersIcon",
-    "title": "Geriatric Physiotherapy",
-    "description": "Specialized care for older adults, focusing on mobility, balance, and quality of life.",
+    "title": "Geriatric Physiotherapy for Seniors",
+    "description": "Enhance mobility, balance, and quality of life with our specialized geriatric physiotherapy care for older adults.",
     "color": "indigo",
     "slug": "geriatric-physiotherapy",
-    "fullDescription": "Our Geriatric Physiotherapy services are tailored to meet the unique needs of older adults. We focus on improving mobility, balance, and strength to help seniors maintain their independence and enjoy a higher quality of life.",
+    "fullDescription": "Motion Works Physiotherapy's Geriatric Physiotherapy services are tailored to meet the unique needs of older adults. We focus on improving mobility, balance, and strength to help seniors maintain their independence and enjoy a higher quality of life. Empowering seniors to live their best lives!",
     "benefits": [
       "Improved balance and reduced fall risk",
       "Enhanced mobility and independence",
-      "Management of age-related conditions",
+      "Effective management of age-related conditions",
       "Personalized exercise programs for seniors"
     ]
   },
   {
     "icon": "HomeIcon",
-    "title": "Home-Based Therapy",
-    "description": "Personalized treatment plans delivered in the comfort of your own home.",
+    "title": "In-Home Physiotherapy Services",
+    "description": "Receive personalized physiotherapy treatment plans in the comfort and convenience of your own home.",
     "color": "pink",
     "slug": "home-based-therapy",
-    "fullDescription": "Our Home-Based Therapy service brings expert physiotherapy care directly to your home. This is ideal for patients with mobility issues or those who prefer the convenience of receiving treatment in their own environment. We provide the same high-quality care as in our clinic, tailored to your home setting.",
+    "fullDescription": "Motion Works Physiotherapy's Home-Based Therapy service brings expert physiotherapy care directly to your home. This is ideal for patients with mobility issues or those who prefer the convenience of receiving treatment in their own environment. We provide the same high-quality care as in our clinic, tailored to your home setting. Experience the best in-home physiotherapy!",
     "benefits": [
       "Convenient, personalized care in your home",
-      "Tailored treatments for your living environment",
-      "Reduced travel stress for patients",
+      "Tailored treatments for your specific living environment",
+      "Reduced travel stress and increased comfort",
       "Family involvement in the rehabilitation process"
     ]
   },
   {
     "icon": "MicroscopeIcon",
-    "title": "Research & Innovation",
-    "description": "Cutting-edge treatments based on the latest physiotherapy research and technology.",
+    "title": "Advanced Physiotherapy Research & Innovation",
+    "description": "Benefit from cutting-edge treatments based on the latest physiotherapy research and innovative technologies.",
     "color": "teal",
     "slug": "research-and-innovation",
-    "fullDescription": "Our Research & Innovation program keeps us at the forefront of physiotherapy advancements. We continuously integrate the latest research findings and innovative technologies into our treatment approaches, ensuring our patients receive the most effective and up-to-date care available.",
+    "fullDescription": "Motion Works Physiotherapy's Research & Innovation program keeps us at the forefront of physiotherapy advancements. We continuously integrate the latest research findings and innovative technologies into our treatment approaches, ensuring our patients receive the most effective and up-to-date care available. Experience the future of physiotherapy!",
     "benefits": [
       "Access to cutting-edge treatment methods",
-      "Participation in clinical research opportunities",
-      "Evidence-based treatment protocols",
-      "Integration of advanced technology in therapy"
+      "Opportunities to participate in clinical research",
+      "Evidence-based treatment protocols for optimal results",
+      "Integration of advanced technology in your therapy"
     ]
   }
 ]

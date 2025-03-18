@@ -1,8 +1,7 @@
-"use client";
+"use client"
 
 import type React from "react"
 import "./globals.css"
-import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
 import Header from "@/components/header"
 import PageHeader from "@/components/PageHeader";
@@ -28,6 +27,9 @@ function getPageTitle(pathname: string): string {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 }
+
+export { getPageTitle };
+
 
 export default function RootLayout({
   children,

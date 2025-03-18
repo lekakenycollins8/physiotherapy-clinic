@@ -24,19 +24,19 @@ export const teamMembers: TeamMember[] = [
 
 export const clinicValues: ClinicValue[] = [
   {
-    title: "Excellence",
-    description: "We strive for excellence in all aspects of patient care, continuously improving our techniques and knowledge."
+    title: "Excellence in Physiotherapy",
+    description: "We are committed to excellence in physiotherapy, providing the highest quality care through continuous improvement and advanced techniques. Experience the difference at Motion Works!",
   },
   {
-    title: "Compassion",
-    description: "We treat each patient with empathy and understanding, recognizing their unique needs and circumstances."
+    title: "Compassionate Care",
+    description: "We provide compassionate and understanding care, recognizing each patient's unique needs and circumstances. Your well-being is our top priority.",
   },
   {
-    title: "Innovation",
-    description: "We embrace evidence-based advancements in physiotherapy to provide the most effective treatments."
+    title: "Innovative Treatments",
+    description: "We utilize innovative and evidence-based physiotherapy treatments to ensure the most effective recovery and pain relief. Discover the latest advancements in physical therapy.",
   },
   {
-    title: "Integrity",
-    description: "We maintain the highest ethical standards in our practice, ensuring transparency and trust in all interactions."
+    title: "Unwavering Integrity",
+    description: "We uphold the highest ethical standards, ensuring transparency and trust in every interaction. Your confidence in our practice is paramount.",
   }
 ];
