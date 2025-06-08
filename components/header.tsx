@@ -33,7 +33,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <a href="/contact" className="text-white flex items-center">
               <MapPin className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">Travel House, Muindi Mbingu Street directly opposite City Hall. Annexe, 5th Floor</span>
+              <span className="text-sm">Muchai Drive, Off Ngong Road</span>
             </a>
             <a href="/contact" className="text-white flex items-center">
               <Phone className="text-blue-600 w-4 h-4 mr-2" />
@@ -45,13 +45,13 @@ const Header = () => {
             </a>
           </div>
           <div className="flex items-center space-x-3">
-            <a href="https://www.facebook.com/share/166DAkaVuM/" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+            <a href="https://www.facebook.com/share/1AAviYEq7t/" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
               <Facebook className="w-4 h-4 text-gray-700" />
             </a>
             <a href="https://x.com/MotionworksP?t=-mzwmz8IpMUh2vCuO0BBaA&s=09" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
               <Twitter className="w-4 h-4 text-gray-700" />
             </a>
-            <a href="https://www.instagram.com/motionworksphysiotherapy?igsh=NjdjZjNyZ25rYXR2" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
+            <a href="https://www.instagram.com/motio_nworks?igsh=MTM3N3Jrb2pxYzJwNA==" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
               <Instagram className="w-4 h-4 text-gray-700" />
             </a>
             <a href="https://www.tiktok.com/@motionworksphysio?_t=ZM-8uR34CIfwLm&_r=1" className="bg-white border rounded-full p-2 flex items-center justify-center w-8 h-8">
