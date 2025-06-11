@@ -106,8 +106,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Location</p>
-                    <p className="text-lg font-medium">Travel House, Muindi Mbingu Street directly opposite City Hall</p>
-                    <p>Annexe, 5th Floor</p>
+                    <p className="text-lg font-medium">Muchai Drive</p>
+                    <p>Off Ngong Road</p>
                   </div>
                 </div>
               </div>
