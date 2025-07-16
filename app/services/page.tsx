@@ -29,6 +29,11 @@ export default function ServicesPage() {
             Discover our range of specialized physiotherapy services designed to
             help you recover, strengthen, and thrive.
           </p>
+          <div className="mt-6 flex justify-center">
+            <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg text-sm font-medium shadow-sm border border-yellow-300">
+              Note: We only accept cash payments ranging from 2500 to 3000.
+            </span>
+          </div>
         </motion.div>
 
         {/* Services List */}
