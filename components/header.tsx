@@ -100,27 +100,27 @@ const Header = () => {
                   <DropdownMenuContent className="w-56 bg-white shadow-lg rounded-md p-1 border border-gray-200">
                     <DropdownMenuItem asChild>
                       <Link href="/services" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Physiotherapy clinic
+                        Physiotherapy services
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link href="/services/chiropractor-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Chiropractor therapy
+                        Chiropractic services
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link href="/services/orthopedic-physiotherapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Orthopedic therapy
+                        Orthopedic manual therapy
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link href="/services/sports-rehabilitation" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Sports therapy
+                      <Link href="/services/massage-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Massage therapy
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link href="/services/dry-needling-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Dry Needling Therapy
+                      <Link href="/services/home-based-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Home based
                       </Link>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
@@ -188,19 +188,19 @@ const Header = () => {
                   {mobileServicesOpen && (
                     <div className="pl-6 space-y-1 mt-1 mb-2">
                       <Link href="/services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Physiotherapy clinic
+                        Physiotherapy services
                       </Link>
                       <Link href="/services/chiropractor-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Chiropractor therapy
+                        Chiropractic services
                       </Link>
                       <Link href="/services/orthopedic-physiotherapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Orthopedic therapy
+                        Orthopaedic manual therapy
                       </Link>
-                      <Link href="/services/sports-rehabilitation" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Sports therapy
+                      <Link href="/services/massage-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Massage therapy
                       </Link>
-                      <Link href="/services/dry-needling-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Dry Needling Therapy
+                      <Link href="/services/home-based-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Home based
                       </Link>
                     </div>
                   )}

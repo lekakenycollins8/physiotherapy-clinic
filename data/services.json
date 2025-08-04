@@ -124,5 +124,19 @@
       "Accelerated healing of injured tissues",
       "Enhanced performance and function in daily activities"
     ]
+  },
+  {
+    "icon": "HandIcon",
+    "title": "Massage Therapy",
+    "description": "Relieve tension, reduce stress, and promote healing with our professional massage therapy services tailored to your needs.",
+    "color": "amber",
+    "slug": "massage-therapy",
+    "fullDescription": "Motion Works Physiotherapy's Massage Therapy service offers a holistic approach to wellness and pain management. Our skilled massage therapists use various techniques including Swedish, deep tissue, sports massage, and myofascial release to address specific concerns and promote overall wellbeing. Whether you're seeking relief from muscle tension, stress reduction, or recovery support, our personalized massage therapy sessions can help restore balance and improve your quality of life.",
+    "benefits": [
+      "Reduced muscle tension and pain",
+      "Improved circulation and flexibility",
+      "Decreased stress and anxiety",
+      "Enhanced recovery from physical activities and injuries"
+    ]
   }
 ]
