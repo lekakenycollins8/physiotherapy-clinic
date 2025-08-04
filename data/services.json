@@ -102,8 +102,8 @@
     "title": "Chiropractic Services",
     "description": "Experience relief from pain and improved mobility with our specialized chiropractic adjustments and treatments.",
     "color": "teal",
-    "slug": "chiropractor-therapy",
-    "fullDescription": "Motion Works Physiotherapy's Chiropractic Services focuses on diagnosing and treating mechanical disorders of the musculoskeletal system, especially the spine. Our skilled chiropractors use hands-on spinal manipulation and other alternative treatments to properly align the body's musculoskeletal structure, enabling the body to heal itself without surgery or medication. We combine traditional chiropractic techniques with modern approaches for optimal results.",
+    "slug": "chiropractic-services",
+    "fullDescription": "Motion Works Physiotherapy's Chiropractic Services focus on diagnosing and treating mechanical disorders of the musculoskeletal system, especially the spine. Our skilled chiropractors use hands-on spinal manipulation and other alternative treatments to properly align the body's musculoskeletal structure, enabling the body to heal itself without surgery or medication. We combine traditional chiropractic techniques with modern approaches for optimal results.",
     "benefits": [
       "Relief from back and neck pain",
       "Improved joint mobility and function",
