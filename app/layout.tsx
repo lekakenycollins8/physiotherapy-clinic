@@ -40,7 +40,7 @@ export default function RootLayout({
   const pageTitle = pathname !== "/" ? getPageTitle(pathname) : "";
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
           <head>
             <title>Motion Works Physiotherapy Clinic</title>
             <meta name="description" content="Motion Works Physiotherapy Clinic - Your path to recovery and wellness." />

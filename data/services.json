@@ -98,17 +98,31 @@
     ]
   },
   {
-    "icon": "MicroscopeIcon",
-    "title": "Advanced Physiotherapy Research & Innovation",
-    "description": "Benefit from cutting-edge treatments based on the latest physiotherapy research and innovative technologies.",
+    "icon": "ZapIcon",
+    "title": "Chiropractor Therapy",
+    "description": "Experience relief from pain and improved mobility with our specialized chiropractic adjustments and treatments.",
     "color": "teal",
-    "slug": "research-and-innovation",
-    "fullDescription": "Motion Works Physiotherapy's Research & Innovation program keeps us at the forefront of physiotherapy advancements. We continuously integrate the latest research findings and innovative technologies into our treatment approaches, ensuring our patients receive the most effective and up-to-date care available. Experience the future of physiotherapy!",
+    "slug": "chiropractor-therapy",
+    "fullDescription": "Motion Works Physiotherapy's Chiropractor Therapy focuses on diagnosing and treating mechanical disorders of the musculoskeletal system, especially the spine. Our skilled chiropractors use hands-on spinal manipulation and other alternative treatments to properly align the body's musculoskeletal structure, enabling the body to heal itself without surgery or medication. We combine traditional chiropractic techniques with modern approaches for optimal results.",
     "benefits": [
-      "Access to cutting-edge treatment methods",
-      "Opportunities to participate in clinical research",
-      "Evidence-based treatment protocols for optimal results",
-      "Integration of advanced technology in your therapy"
+      "Relief from back and neck pain",
+      "Improved joint mobility and function",
+      "Reduced inflammation and muscle tension",
+      "Enhanced nervous system function and overall wellness"
+    ]
+  },
+  {
+    "icon": "MicroscopeIcon",
+    "title": "Dry Needling Therapy",
+    "description": "Target trigger points and relieve muscle pain with our precise dry needling techniques performed by skilled therapists.",
+    "color": "purple",
+    "slug": "dry-needling-therapy",
+    "fullDescription": "Motion Works Physiotherapy's Dry Needling Therapy is a specialized treatment that involves inserting thin monofilament needles into myofascial trigger points (painful knots in muscles) to stimulate a healing response. Unlike acupuncture, dry needling targets specific musculoskeletal issues based on Western medicine principles. Our certified therapists use this technique to release tension, improve blood flow, and promote faster recovery from various musculoskeletal conditions.",
+    "benefits": [
+      "Immediate reduction in muscle pain and tension",
+      "Improved range of motion and flexibility",
+      "Accelerated healing of injured tissues",
+      "Enhanced performance and function in daily activities"
     ]
   }
 ]

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X, MapPin, Phone, Mail, Facebook, Twitter, Instagram,  Star } from "lucide-react";  
+import { Menu, X, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Star, ChevronDown } from "lucide-react";  
 import { FaTiktok } from "react-icons/fa";
 
 // Shadcn UI Components
@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const Header = () => {
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   return (
     <>
       {/* Topbar - visible only on desktop */}
@@ -92,11 +93,38 @@ const Header = () => {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/services" passHref>
-                  <NavigationMenuLink className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
-                    Services
-                  </NavigationMenuLink>
-                </Link>
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                    Services <ChevronDown className="ml-1 h-4 w-4" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-56 bg-white shadow-lg rounded-md p-1 border border-gray-200">
+                    <DropdownMenuItem asChild>
+                      <Link href="/services" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Physiotherapy clinic
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/chiropractor-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Chiropractor therapy
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/orthopedic-physiotherapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Orthopedic therapy
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/sports-rehabilitation" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Sports therapy
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/dry-needling-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Dry Needling Therapy
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/about" passHref>
@@ -149,12 +177,34 @@ const Header = () => {
                 >
                   Home
                 </Link>
-                <Link
-                  href="/services"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium"
-                >
-                  Services
-                </Link>
+                <div className="relative">
+                  <div 
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium flex items-center justify-between cursor-pointer"
+                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  >
+                    Services
+                    <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${mobileServicesOpen ? 'transform rotate-180' : ''}`} />
+                  </div>
+                  {mobileServicesOpen && (
+                    <div className="pl-6 space-y-1 mt-1 mb-2">
+                      <Link href="/services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Physiotherapy clinic
+                      </Link>
+                      <Link href="/services/chiropractor-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Chiropractor therapy
+                      </Link>
+                      <Link href="/services/orthopedic-physiotherapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Orthopedic therapy
+                      </Link>
+                      <Link href="/services/sports-rehabilitation" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Sports therapy
+                      </Link>
+                      <Link href="/services/dry-needling-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Dry Needling Therapy
+                      </Link>
+                    </div>
+                  )}
+                </div>
                 <Link
                   href="/about"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-medium"
@@ -180,8 +230,8 @@ const Header = () => {
                     <span className="text-sm">+254 706 143 886</span>
                   </a>
                   <a href="#" className="flex items-center px-4 py-2 text-gray-700">
-                    <Mail className="text-blue-600 w-4 h-4 mr-2" />
-                    <span className="text-sm">motionworksphysiotherapy@gmail.com</span>
+                    <Mail className="text-blue-600 w-4 h-4 mr-2 flex-shrink-0" />
+                    <span className="text-sm break-all">motionworksphysiotherapy@gmail.com</span>
                   </a>
                 </div>
                 
