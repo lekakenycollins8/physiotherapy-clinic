@@ -238,7 +238,10 @@ const Header = () => {
                   </a>
                   <a href="#" className="flex items-center px-4 py-2 text-gray-700">
                     <Phone className="text-blue-600 w-4 h-4 mr-2" />
-                    <span className="text-sm">+254 706 143 886</span>
+                    <span className="text-sm">
+                      +254 706 143 886 <br className="hidden lg:block" />
+                      +254 740 277 532
+                    </span>
                   </a>
                   <a href="#" className="flex items-center px-4 py-2 text-gray-700">
                     <Mail className="text-blue-600 w-4 h-4 mr-2 flex-shrink-0" />
