@@ -202,6 +202,9 @@ const Header = () => {
                       <Link href="/services/orthopedic-physiotherapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Orthopaedic manual therapy
                       </Link>
+                      <Link href="/services/sports-rehabilitation" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Sports massage therapy
+                      </Link>
                       <Link href="/services/massage-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Massage therapy
                       </Link>
