@@ -31,7 +31,7 @@ export default function ServicesPage() {
           </p>
           <div className="mt-6 flex justify-center">
             <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg text-sm font-medium shadow-sm border border-yellow-300">
-              Note: We accept cash payments in Kenyan Shillings (KES) ranging from 3000 KES.
+              Note: We accept cash payments in Kenyan Shillings (KES) ranging from 3500 KES.
             </span>
           </div>
         </motion.div>
