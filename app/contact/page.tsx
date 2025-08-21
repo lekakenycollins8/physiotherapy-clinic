@@ -87,7 +87,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-blue-200 text-sm">Call Us</p>
                     <p className="text-lg font-medium">+254 706 143 886</p>
-                    <p className="text-lg font-medium">+254 740 277 532</p>
+                    {/* <p className="text-lg font-medium">+254 740 277 532</p> */}
                   </div>
                 </div>
                 
