@@ -38,8 +38,10 @@ const Header = () => {
             </a>
             <a href="/contact" className="text-white flex items-center">
               <Phone className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">+254 706 143 886</span>
-              <span className="text-sm">+254 740 277 532</span>
+              <span className="text-sm">
+                +254 706 143 886 <br className="hidden lg:block" />
+                +254 740 277 532
+              </span>
             </a>
             <a href="/contact" className="text-white flex items-center">
               <Mail className="text-blue-600 w-4 h-4 mr-2" />
