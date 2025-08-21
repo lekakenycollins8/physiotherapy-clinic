@@ -97,7 +97,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Email Us</p>
-                    <p className="text-lg font-medium">motionworksphysiotherapy@gmail.com</p>
+                    <p className="text-lg font-medium md:block sm:hidden">motionworksphysiotherapy@gmail.com</p>
+                    <p className="text-lg font-medium hidden md:hidden sm:block">motionworksphysiotherapy@gmail<br className="hidden lg:block" />.com</p>
                   </div>
                 </div>
                 
