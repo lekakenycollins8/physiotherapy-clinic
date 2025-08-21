@@ -106,8 +106,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Location</p>
-                    <p className="text-lg font-medium">Muchai Drive</p>
-                    <p>Off Ngong Road</p>
+                    <p className="text-lg font-medium">Bayswater Court suite 2</p>
+                    <p>along Ngong Road</p>
+                    <p>2nd left turn after City mortuary </p>
+                    <p>towards Prestige Plaza</p>
                   </div>
                 </div>
               </div>
@@ -116,7 +118,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-4">Our Location</h3>
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.579828634228!2d36.79678597669586!3d-1.300926335645875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10939730ed9d%3A0x309771cfcba191c6!2sMuchai%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1749385180527!5m2!1sen!2ske"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.793373251107!2d36.79713277350066!3d-1.2987366356367767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11005977b5bb%3A0xbde013b3a999e89f!2sBayswater%20court!5e0!3m2!1sen!2ske!4v1755779279644!5m2!1sen!2ske"
                     width="100%"
                     height="240"
                     style={{ border: 0 }}
@@ -128,7 +130,7 @@ export default function ContactPage() {
                 <div className="mt-8 text-center">
                   <p className="text-blue-200 mb-2">Business Hours</p>
                   <p className="font-medium">Monday - Friday: 8AM - 6PM</p>
-                  <p className="font-medium">Saturday: 9AM - 4PM</p>
+                  <p className="font-medium">Saturday & Sunday: 9AM - 4PM</p>
                 </div>
               </div>
             </div>

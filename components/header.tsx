@@ -34,11 +34,12 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <a href="/contact" className="text-white flex items-center">
               <MapPin className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">Muchai Drive, Off Ngong Road</span>
+              <span className="text-sm">Bayswater Court suite 2, along Ngong Road</span>
             </a>
             <a href="/contact" className="text-white flex items-center">
               <Phone className="text-blue-600 w-4 h-4 mr-2" />
               <span className="text-sm">+254 706 143 886</span>
+              <span className="text-sm">+254 740 277 532</span>
             </a>
             <a href="/contact" className="text-white flex items-center">
               <Mail className="text-blue-600 w-4 h-4 mr-2" />
@@ -111,6 +112,11 @@ const Header = () => {
                     <DropdownMenuItem asChild>
                       <Link href="/services/orthopedic-physiotherapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
                         Orthopedic manual therapy
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/sports-rehabilitation" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Sports massage therapy
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
