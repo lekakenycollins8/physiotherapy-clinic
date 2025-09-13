@@ -106,11 +106,11 @@ const Header = () => {
                         Physiotherapy services
                       </Link>
                     </DropdownMenuItem>
-                    {/* <DropdownMenuItem asChild>
+                    <DropdownMenuItem asChild>
                       <Link href="/services/chiropractic-services" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
                         Chiropractic services
                       </Link>
-                    </DropdownMenuItem> */}
+                    </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link href="/services/orthopedic-physiotherapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
                         Orthopedic manual therapy
@@ -198,9 +198,9 @@ const Header = () => {
                       <Link href="/services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Physiotherapy services
                       </Link>
-                      {/* <Link href="/services/chiropractic-services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                      <Link href="/services/chiropractic-services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Chiropractic services
-                      </Link> */}
+                      </Link>
                       <Link href="/services/orthopedic-physiotherapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Orthopaedic manual therapy
                       </Link>
