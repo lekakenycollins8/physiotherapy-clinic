@@ -35,13 +35,34 @@ export default function ContactPage() {
     <div className="bg-gradient-to-br from-blue-100 to-white-100 py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-800 mb-4 relative bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Reach Out</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">We're here to help with any questions you might have about our services. Reach out and we'll respond as soon as we can.</p>
+          <h1 className="text-5xl font-bold text-gray-800 mb-4 relative bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Book Your Session</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-6">Ready to start your recovery journey? Call us directly for immediate booking confirmation!</p>
+          
+          {/* Prominent Phone CTA */}
+          <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 max-w-md mx-auto mb-8">
+            <div className="text-3xl mb-3">📞</div>
+            <h2 className="text-2xl font-bold text-green-800 mb-2">Call to Book Now</h2>
+            <a href="tel:+254706143886" className="text-3xl font-bold text-green-600 hover:text-green-700 transition-colors">
+              +254 706 143 886
+            </a>
+            <p className="text-green-700 text-sm mt-2">Instant confirmation • No forms needed • Speak to our team</p>
+          </div>
+          
+          <p className="text-gray-500 text-sm">Or use the form below if you prefer online booking</p>
         </div>
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-8 md:p-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                <div className="flex items-center justify-center gap-3 mb-3">
+                  <Phone className="w-6 h-6 text-green-600" />
+                  <span className="text-lg font-semibold text-green-800">Prefer to call? Get instant booking!</span>
+                </div>
+                <a href="tel:+254706143886" className="block text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                  Call +254 706 143 886 Now
+                </a>
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">Online Booking Form</h2>
               {success && <p className={`mb-4 text-lg ${success.includes('Failed') ? 'text-red-500' : 'text-green-500'}`}>{success}</p>}
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>

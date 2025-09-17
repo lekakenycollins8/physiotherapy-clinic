@@ -36,12 +36,12 @@ const Header = () => {
               <MapPin className="text-blue-600 w-4 h-4 mr-2" />
               <span className="text-sm">Bayswater Court suite 2, along Ngong Road</span>
             </a>
-            <a href="/contact" className="text-white flex items-center">
+            <a href="tel:+254706143886" className="text-white flex items-center hover:text-blue-200 transition-colors">
               <Phone className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">
-                +254 706 143 886 <br className="hidden lg:block" />
-                {/* +254 740 277 532 */}
-              </span>
+              <div className="flex flex-col">
+                <span className="text-sm font-medium">Call to Book Sessions</span>
+                <span className="text-xs text-blue-200">+254 706 143 886</span>
+              </div>
             </a>
             <a href="/contact" className="text-white flex items-center">
               <Mail className="text-blue-600 w-4 h-4 mr-2" />
@@ -156,11 +156,21 @@ const Header = () => {
           {/* Desktop Appointment Button */}
           <div className="hidden md:block">
             <Link href="/contact" passHref>
-              <Button
-                className="rounded-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white"
-              >
-                Book Appointment
-              </Button>
+              <div className="flex gap-2">
+                <a href="tel:+254706143886">
+                  <Button
+                    className="rounded-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white flex items-center gap-1"
+                  >
+                    <Phone className="w-4 h-4" />
+                    Call to Book
+                  </Button>
+                </a>
+                <Button
+                  className="rounded-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  Online Form
+                </Button>
+              </div>
             </Link>
           </div>
 
@@ -236,12 +246,12 @@ const Header = () => {
                     <MapPin className="text-blue-600 w-4 h-4 mr-2" />
                     <span className="text-sm">Find A Location</span>
                   </a>
-                  <a href="#" className="flex items-center px-4 py-2 text-gray-700">
-                    <Phone className="text-blue-600 w-4 h-4 mr-2" />
-                    <span className="text-sm">
-                      +254 706 143 886 <br className="hidden lg:block" />
-                      {/* +254 740 277 532 */}
-                    </span>
+                  <a href="tel:+254706143886" className="flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 rounded-lg transition-colors">
+                    <Phone className="text-green-600 w-4 h-4 mr-2" />
+                    <div className="flex flex-col">
+                      <span className="text-sm font-medium text-green-700">Call to Book Now</span>
+                      <span className="text-xs text-gray-500">+254 706 143 886</span>
+                    </div>
                   </a>
                   <a href="#" className="flex items-center px-4 py-2 text-gray-700">
                     <Mail className="text-blue-600 w-4 h-4 mr-2 flex-shrink-0" />
@@ -249,13 +259,24 @@ const Header = () => {
                   </a>
                 </div>
                 
-                <Link href="/contact" className="block mt-4">
-                  <Button
-                    className="w-full rounded-full bg-blue-600 hover:bg-blue-700 text-white"
-                  >
-                    Book Appointment
-                  </Button>
-                </Link>
+                <div className="mt-4 space-y-2">
+                  <a href="tel:+254706143886" className="block">
+                    <Button
+                      className="w-full rounded-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2"
+                    >
+                      <Phone className="w-4 h-4" />
+                      Call to Book Session
+                    </Button>
+                  </a>
+                  <Link href="/contact" className="block">
+                    <Button
+                      variant="outline"
+                      className="w-full rounded-full border-blue-600 text-blue-600 hover:bg-blue-50"
+                    >
+                      Online Booking Form
+                    </Button>
+                  </Link>
+                </div>
               </nav>
             </SheetContent>
           </Sheet>

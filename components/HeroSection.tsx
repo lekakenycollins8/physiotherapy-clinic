@@ -6,9 +6,7 @@ import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const stats = [
-  { number: "4.9", label: "Patient Rating" },
-];
+
 
 const backgroundImages = [
   "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=2070",
@@ -78,7 +76,7 @@ export function HeroSection() {
 
           {/* Description */}
           <motion.p
-            className="text-xl text-white/90 mb-8 leading-relaxed"
+            className="text-xl text-white/90 mb-4 leading-relaxed"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -86,6 +84,16 @@ export function HeroSection() {
             Experience personalized care from certified physiotherapists. We're
             dedicated to helping you recover, strengthen, and thrive.
           </motion.p>
+          
+          {/* Phone Booking Emphasis */}
+          <motion.div
+            className="bg-green-500/20 backdrop-blur-md rounded-lg px-6 py-3 mb-8 inline-block"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.25 }}
+          >
+            <span className="text-white font-medium">📞 Call Now for Immediate Session Booking - No Waiting!</span>
+          </motion.div>
 
           {/* Call-to-Actions */}
           <motion.div
@@ -94,43 +102,50 @@ export function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Link
-              href="/contact"
-              aria-label="Book a consultation appointment"
-              className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-            >
-              Book Consultation
-              <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
             <a
               href="tel:+254706143886"
-              aria-label="Call us now for immediate assistance"
-              className="group bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 hover:shadow-lg"
+              aria-label="Call now to book your physiotherapy session"
+              className="group bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             >
               <Phone className="mr-2" />
-              Call Us Now
+              Call to Book Session
+              <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
+            <Link
+              href="/contact"
+              aria-label="Book a consultation appointment online"
+              className="group bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 hover:shadow-lg"
+            >
+              Online Booking Form
+            </Link>
           </motion.div>
 
-          {/* Statistics */}
+          {/* Phone Booking Benefits */}
           <motion.div
-            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl"
+            className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                className="bg-white/10 backdrop-blur-md rounded-lg p-4 text-white hover:shadow-lg"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-              >
-                <div className="text-2xl font-bold">{stat.number}</div>
-                <div className="text-sm text-white/80">{stat.label}</div>
-              </motion.div>
-            ))}
+            <motion.div
+              className="bg-green-500/20 backdrop-blur-md rounded-lg p-4 text-white hover:shadow-lg"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="text-lg font-bold">⚡ Instant</div>
+              <div className="text-sm text-white/80">Immediate Booking</div>
+            </motion.div>
+            <motion.div
+              className="bg-green-500/20 backdrop-blur-md rounded-lg p-4 text-white hover:shadow-lg"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="text-lg font-bold">💬 Personal</div>
+              <div className="text-sm text-white/80">Speak to Our Team</div>
+            </motion.div>
+            
           </motion.div>
         </div>
       </div>
