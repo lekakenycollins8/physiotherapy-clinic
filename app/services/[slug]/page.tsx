@@ -13,6 +13,9 @@ import {
   Users as UsersIcon,
   Home as HomeIcon,
   Microscope as MicroscopeIcon,
+  Phone,
+  ArrowRight,
+  MessageCircle,
 } from "lucide-react";
 
 const iconMap: { [key: string]: LucideIcon } = {
@@ -64,6 +67,35 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               />
             </div>
             <h1 className="text-3xl font-bold mb-4 text-gray-800">{title}</h1>
+            
+            {/* Prominent Phone Booking CTA */}
+            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-8">
+              <div className="text-center">
+                <div className="text-3xl mb-3">📞</div>
+                <h2 className="text-xl font-bold text-green-800 mb-2">Book This Service Now</h2>
+                <a href="tel:+254706143886" className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors block mb-2">
+                  +254 706 143 886
+                </a>
+                <p className="text-green-700 text-sm mb-4">Call for instant session booking • Speak to our specialists • Get immediate confirmation</p>
+                <div className="flex flex-wrap justify-center gap-3">
+                  <a
+                    href="tel:+254706143886"
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full inline-flex items-center transition-colors font-semibold"
+                  >
+                    <Phone className="mr-2 w-4 h-4" />
+                    Call to Book Session
+                  </a>
+                  <a
+                    href="https://wa.me/+254706143886"
+                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full inline-flex items-center transition-colors"
+                  >
+                    <MessageCircle className="mr-2 w-4 h-4" />
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+            
             <p className="text-gray-600 mb-8 leading-relaxed">{fullDescription}</p>
             <h2 className="text-xl font-semibold mb-4 text-gray-800">
               Benefits:
@@ -75,16 +107,50 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/contact"
-              className={`inline-block ${
-                color
-                  ? `bg-blue-500 hover:bg-${color}-600`
-                  : "bg-blue-500 hover:bg-blue-600"
-              } text-white px-6 py-3 rounded-full font-medium transition-colors duration-300`}
-            >
-              Book an Appointment
-            </Link>
+            
+            {/* Booking Options */}
+            <div className="border-t pt-8">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Ready to Book This Service?</h3>
+              <p className="text-gray-600 mb-6">Choose your preferred booking method:</p>
+              
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="tel:+254706143886"
+                  className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full inline-flex items-center transition-colors font-semibold flex-1 justify-center min-w-fit"
+                >
+                  <Phone className="mr-2 w-5 h-5" />
+                  Call for Instant Booking
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+                
+                <Link
+                  href="/contact"
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full inline-flex items-center transition-colors font-medium flex-1 justify-center min-w-fit"
+                >
+                  Online Booking Form
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </div>
+              
+              {/* Phone Booking Benefits */}
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                  <div className="text-2xl mb-2">⚡</div>
+                  <h4 className="font-semibold text-green-800 text-sm">Instant Confirmation</h4>
+                  <p className="text-green-700 text-xs mt-1">Get booked immediately</p>
+                </div>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+                  <div className="text-2xl mb-2">💬</div>
+                  <h4 className="font-semibold text-blue-800 text-sm">Ask Questions</h4>
+                  <p className="text-blue-700 text-xs mt-1">Speak to our specialists</p>
+                </div>
+                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 text-center">
+                  <div className="text-2xl mb-2">📅</div>
+                  <h4 className="font-semibold text-purple-800 text-sm">Flexible Times</h4>
+                  <p className="text-purple-700 text-xs mt-1">Find the perfect slot</p>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
