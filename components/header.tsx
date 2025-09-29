@@ -34,7 +34,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <a href="/contact" className="text-white flex items-center">
               <MapPin className="text-blue-600 w-4 h-4 mr-2" />
-              <span className="text-sm">Bayswater Court suite 2, along Ngong Road</span>
+              <span className="text-sm">Princess Park Apartments</span>
             </a>
             <a href="tel:+254706143886" className="text-white flex items-center hover:text-blue-200 transition-colors">
               <Phone className="text-blue-600 w-4 h-4 mr-2" />
