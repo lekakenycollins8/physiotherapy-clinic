@@ -6,8 +6,6 @@ import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-
-
 const backgroundImages = [
   "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=2070",
   "physio3.jpg" // Replace with your second image URL
@@ -25,16 +23,19 @@ export function HeroSection() {
 
   return (
     <section role="banner" className="relative min-h-screen flex items-center">
-      <div className="absolute inset-0 z-0">
-        <AnimatePresence initial={false}>
+      {/* Fixed background container with dark fallback */}
+      <div className="absolute inset-0 z-0 bg-gray-900">
+        <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={currentImage}
             className="absolute inset-0 z-0"
-            initial={{ opacity: 0, y: 0 }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ ease: "easeOut", duration: 2 }}
-            whileInView={{ y: -20 }}
+            transition={{ 
+              duration: 1.5,
+              ease: "easeInOut"
+            }}
             style={{ overflow: "hidden" }}
           >
             <Image
@@ -59,7 +60,7 @@ export function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-white">✨ MotionWorks Your Trusted Physio Clinic</span>
+            <span className="text-white">✨ MotionWorks Your Trusted Physio Clinic</span>
           </motion.div>
 
           {/* Headline */}
