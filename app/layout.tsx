@@ -9,13 +9,29 @@ import Footer from "@/components/footer"
 import { usePathname } from "next/navigation"
 import Script from "next/script"
 import { useEffect } from "react"
-import * as gtag from "@/lib/gtag"
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 })
+
+// ✅ Google Ads ID
+const GA_TRACKING_ID = "AW-17151250932"
+
+// ✅ Track pageview
+const pageview = (url: string) => {
+  ;(window as any).gtag?.("config", GA_TRACKING_ID, {
+    page_path: url,
+  })
+}
+
+// ✅ Track call click conversion
+const trackCallClick = () => {
+  ;(window as any).gtag?.("event", "conversion", {
+    send_to: "AW-17151250932/Ve7sCM2S_KUbEPSjrfI_",
+  })
+}
 
 function getPageTitle(pathname: string): string {
   const segments = pathname.split("/").filter(Boolean)
@@ -40,16 +56,16 @@ export default function RootLayout({
   // ✅ Track page views & call clicks
   useEffect(() => {
     if (pathname) {
-      gtag.pageview(pathname)
+      pageview(pathname)
     }
 
-    // Attach event listener for tel: links
+    // Attach event listener for all tel: links
     const telLinks = document.querySelectorAll<HTMLAnchorElement>('a[href^="tel:"]')
-    const handleClick = () => gtag.trackCallClick()
+    const handleClick = () => trackCallClick()
 
     telLinks.forEach(link => link.addEventListener("click", handleClick))
 
-    // cleanup
+    // Cleanup listeners on route change
     return () => {
       telLinks.forEach(link => link.removeEventListener("click", handleClick))
     }
@@ -63,8 +79,10 @@ export default function RootLayout({
           name="description"
           content="Motion Works Physiotherapy Clinic - Your path to recovery and wellness."
         />
+
+        {/* ✅ Google Ads / Analytics Tag */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -72,7 +90,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${gtag.GA_TRACKING_ID}', {
+            gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
           `}
