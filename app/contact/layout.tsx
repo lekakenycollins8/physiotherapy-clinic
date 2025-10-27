@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       "Book your session with Nairobi's best physiotherapist. Princess Park Apartments, Ngong Road. Call +254 706 143 886 for immediate booking.",
     url: "https://www.motionworksphysioclinic.com/contact",
-    siteName: "MotionWorks Physiotherapy Clinic",
+    siteName: "MotionWorks Physiotherapy Clinic - Best Physiotherapist in Nairobi",
     locale: "en_KE",
     type: "website",
   },
