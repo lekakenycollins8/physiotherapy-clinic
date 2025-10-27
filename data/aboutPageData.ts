@@ -7,7 +7,7 @@ export const teamMembers: TeamMember[] = [
     role: "Lead Physiotherapist",
     image: "/brian.jpeg",
     altText: "Brian Ochieng - Lead senior physiotherapist with over 10 years of experience in Nairobi, Kenya",
-    description: "Lead senior physiotherapist with over 10yrs of experience. Holds a bachelors degree in physiotherapy from Jkuat.",
+    description: "Lead senior physiotherapist with over 10yrs of experience in transforming lives through physiotherapy. Holds a bachelors degree in physiotherapy from Jkuat.",
   },
 ];
 

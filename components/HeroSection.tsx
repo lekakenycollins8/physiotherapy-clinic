@@ -65,7 +65,7 @@ export function HeroSection() {
 
           {/* Headline */}
           <motion.h1
-            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl sm:text-5xl font-bold text-white mb-6 leading-tight"
             style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.7)" }}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
