@@ -130,6 +130,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-blue-200 text-sm">Location</p>
                     <p className="text-lg font-medium">Princess Park Apartments</p>
+                    <p className="text-base font-medium">Along Ngong Road, Nairobi</p>
                   </div>
                 </div>
               </div>

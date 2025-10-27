@@ -2,16 +2,17 @@
   {
     "icon": "ActivityIcon",
     "title": "Sports Injury Rehabilitation",
-    "description": "Recover faster and enhance your athletic performance with our specialized sports injury rehabilitation programs.",
+    "description": "Recover faster and enhance your athletic performance with our specialized sports injury rehabilitation programs in Nairobi.",
     "color": "blue",
     "slug": "sports-rehabilitation",
-    "fullDescription": "Motion Works Physiotherapy offers a comprehensive Sports Rehabilitation program designed to help athletes of all levels recover from injuries, improve performance, and prevent future issues. Our expert physiotherapists use advanced techniques and state-of-the-art equipment to provide comprehensive care tailored to each athlete's specific needs and goals.",
+    "fullDescription": "MotionWorks Physiotherapy offers the best sports injury physiotherapy in Nairobi for athletes of all levels. Our sports rehabilitation massage and manual therapy techniques help you recover from sports injuries faster. Located at Princess Park Apartments, Ngong Road, we provide physiotherapy for athletes in Nairobi with personalized care. Whether you're dealing with sprains, strains, or post-injury recovery, our expert team delivers comprehensive sports injury rehabilitation Nairobi trusts.",
     "benefits": [
       "Faster recovery from sports-related injuries",
-      "Improved athletic performance",
-      "Personalized training programs",
+      "Improved athletic performance with sports rehabilitation massage Nairobi",
+      "Personalized training programs for athletes",
       "Effective injury prevention strategies"
-    ]
+    ],
+    "keywords": "sports injury physiotherapy Nairobi, sports rehabilitation massage Nairobi, physiotherapy for athletes Nairobi, sports injury rehabilitation Nairobi"
   },
   {
     "icon": "BrainIcon",
@@ -44,85 +45,91 @@
   {
     "icon": "ActivityIcon",
     "title": "Orthopedic & Musculoskeletal Physiotherapy",
-    "description": "Recover from musculoskeletal injuries, joint problems, and surgeries with our specialized orthopedic physiotherapy treatments.",
+    "description": "Expert back pain physiotherapy Nairobi, neck pain treatment, and joint pain relief with orthopedic manual therapy.",
     "color": "green",
     "slug": "orthopedic-physiotherapy",
-    "fullDescription": "Motion Works Physiotherapy's Orthopedic Physiotherapy services address a wide range of musculoskeletal conditions, from sports injuries to chronic joint pain. Our skilled physiotherapists use manual therapy, exercise prescription, and advanced modalities to help patients recover function, reduce pain, and improve overall mobility.",
+    "fullDescription": "MotionWorks offers the best back pain physiotherapy Nairobi and neck pain physiotherapist Nairobi services. Our orthopedic manual therapy Nairobi specialists treat joint pain, post-surgery rehabilitation, and musculoskeletal conditions. Using manual therapy physio Nairobi techniques, we address chronic back pain, neck pain, shoulder pain, knee pain, and joint problems. Our post-surgery rehabilitation Nairobi program helps you recover faster from orthopedic surgeries. Located at Princess Park Apartments, Ngong Road.",
     "benefits": [
-      "Effective pain reduction and management",
-      "Improved joint mobility and flexibility",
-      "Faster recovery from surgeries and injuries",
-      "Customized exercise programs for orthopedic conditions"
-    ]
+      "Effective back pain and neck pain relief in Nairobi",
+      "Improved joint mobility with orthopedic manual therapy",
+      "Faster post-surgery rehabilitation Nairobi",
+      "Expert treatment for joint pain physiotherapist Nairobi"
+    ],
+    "keywords": "back pain physiotherapy Nairobi, neck pain physiotherapist Nairobi, joint pain physiotherapist Nairobi, post-surgery rehabilitation Nairobi, orthopedic manual therapy Nairobi, manual therapy physio Nairobi"
   },
   {
     "icon": "ZapIcon",
     "title": "Chronic Pain Management Physiotherapy",
-    "description": "Alleviate chronic pain and improve your overall well-being with our advanced pain management physiotherapy techniques.",
+    "description": "Best back pain physiotherapy Nairobi, neck pain treatment, and chronic pain relief with advanced manual therapy techniques.",
     "color": "yellow",
     "slug": "pain-management",
-    "fullDescription": "Motion Works Physiotherapy's Pain Management program utilizes a multidisciplinary approach to help patients dealing with chronic pain conditions. We combine physical therapy techniques with education and lifestyle modifications to reduce pain, improve function, and enhance quality of life. Reclaim your life from chronic pain!",
+    "fullDescription": "MotionWorks provides expert chronic pain management in Nairobi for back pain, neck pain, joint pain, and musculoskeletal pain. Our back pain physiotherapy Nairobi services combine manual therapy, massage therapy, and posture correction physiotherapy Nairobi. We treat office workers with corporate physiotherapy Nairobi programs targeting desk-related pain. Our neck pain physiotherapist Nairobi specialists help you achieve lasting pain relief. Located at Princess Park Apartments, Ngong Road.",
     "benefits": [
-      "Reduced chronic pain symptoms",
-      "Improved daily functioning and mobility",
+      "Reduced chronic back pain and neck pain symptoms",
+      "Improved daily functioning with posture correction physiotherapy Nairobi",
       "Decreased reliance on pain medications",
-      "Effective stress reduction and relaxation techniques"
-    ]
+      "Corporate physiotherapy Nairobi for office workers"
+    ],
+    "keywords": "back pain physiotherapy Nairobi, neck pain physiotherapist Nairobi, posture correction physiotherapy Nairobi, corporate physiotherapy Nairobi"
   },
   {
     "icon": "UsersIcon",
     "title": "Geriatric Physiotherapy for Seniors",
-    "description": "Enhance mobility, balance, and quality of life with our specialized geriatric physiotherapy care for older adults.",
+    "description": "Specialized physiotherapy for seniors Nairobi with home-based physio options for elderly care and mobility improvement.",
     "color": "indigo",
     "slug": "geriatric-physiotherapy",
-    "fullDescription": "Motion Works Physiotherapy's Geriatric Physiotherapy services are tailored to meet the unique needs of older adults. We focus on improving mobility, balance, and strength to help seniors maintain their independence and enjoy a higher quality of life. Empowering seniors to live their best lives!",
+    "fullDescription": "MotionWorks offers expert physiotherapy for seniors Nairobi and home physiotherapy for elderly Nairobi. Our geriatric specialists provide home-based physio Nairobi services for seniors with mobility challenges. We treat joint pain, balance issues, post-surgery rehabilitation, and age-related conditions. Our home physiotherapy for elderly Nairobi program brings professional care to your doorstep. Located at Princess Park Apartments, Ngong Road, we serve seniors across Nairobi.",
     "benefits": [
-      "Improved balance and reduced fall risk",
-      "Enhanced mobility and independence",
-      "Effective management of age-related conditions",
-      "Personalized exercise programs for seniors"
-    ]
+      "Improved balance and reduced fall risk for seniors",
+      "Enhanced mobility with physiotherapy for seniors Nairobi",
+      "Convenient home physiotherapy for elderly Nairobi",
+      "Personalized home-based physio Nairobi programs"
+    ],
+    "keywords": "physiotherapy for seniors Nairobi, home physiotherapy for elderly Nairobi, home-based physio Nairobi"
   },
   {
     "icon": "HomeIcon",
     "title": "In-Home Physiotherapy Services",
-    "description": "Receive personalized physiotherapy treatment plans in the comfort and convenience of your own home.",
+    "description": "Professional home-based physio Nairobi services including home physiotherapy for elderly and post-surgery care.",
     "color": "pink",
     "slug": "home-based-therapy",
-    "fullDescription": "Motion Works Physiotherapy's Home-Based Therapy service brings expert physiotherapy care directly to your home. This is ideal for patients with mobility issues or those who prefer the convenience of receiving treatment in their own environment. We provide the same high-quality care as in our clinic, tailored to your home setting. Experience the best in-home physiotherapy!",
+    "fullDescription": "MotionWorks provides the best home-based physio Nairobi services, bringing expert physiotherapy to your doorstep. Our home physiotherapy for elderly Nairobi program is perfect for seniors, post-surgery patients, and those with mobility challenges. We offer back pain physiotherapy, joint pain treatment, post-surgery rehabilitation Nairobi, and physiotherapy for seniors - all in the comfort of your home. Serving Princess Park, Ngong Road, and surrounding Nairobi areas.",
     "benefits": [
-      "Convenient, personalized care in your home",
-      "Tailored treatments for your specific living environment",
-      "Reduced travel stress and increased comfort",
-      "Family involvement in the rehabilitation process"
-    ]
+      "Convenient home-based physio Nairobi at your doorstep",
+      "Specialized home physiotherapy for elderly Nairobi",
+      "Post-surgery rehabilitation in your home environment",
+      "Reduced travel stress with professional home care"
+    ],
+    "keywords": "home-based physio Nairobi, home physiotherapy for elderly Nairobi, post-surgery rehabilitation Nairobi"
   },
   {
     "icon": "ZapIcon",
     "title": "Chiropractic Services",
-    "description": "Experience relief from pain and improved mobility with our specialized chiropractic adjustments and treatments.",
+    "description": "Expert chiropractic services Nairobi for back pain, neck pain relief, and spinal alignment at Princess Park.",
     "color": "teal",
     "slug": "chiropractic-services",
-    "fullDescription": "Motion Works Physiotherapy's Chiropractic Services focus on diagnosing and treating mechanical disorders of the musculoskeletal system, especially the spine. Our skilled chiropractors use hands-on spinal manipulation and other alternative treatments to properly align the body's musculoskeletal structure, enabling the body to heal itself without surgery or medication. We combine traditional chiropractic techniques with modern approaches for optimal results.",
+    "fullDescription": "MotionWorks offers professional chiropractic services Nairobi for back pain physiotherapy, neck pain treatment, and spinal health. Our chiropractors combine manual therapy with orthopedic techniques to treat back pain, neck pain, joint pain, and posture problems. We provide chiropractic services Nairobi trusts for corporate physiotherapy, sports injuries, and chronic pain management. Located at Princess Park Apartments, Ngong Road, Nairobi.",
     "benefits": [
-      "Relief from back and neck pain",
-      "Improved joint mobility and function",
-      "Reduced inflammation and muscle tension",
-      "Enhanced nervous system function and overall wellness"
-    ]
+      "Relief from back pain and neck pain with chiropractic services Nairobi",
+      "Improved joint mobility and spinal alignment",
+      "Reduced inflammation with manual therapy techniques",
+      "Enhanced posture correction physiotherapy Nairobi"
+    ],
+    "keywords": "chiropractic services Nairobi, back pain physiotherapy Nairobi, neck pain physiotherapist Nairobi, posture correction physiotherapy Nairobi"
   },
   {
     "icon": "HandIcon",
     "title": "Massage Therapy",
-    "description": "Relieve tension, reduce stress, and promote healing with our professional massage therapy services tailored to your needs.",
+    "description": "Professional massage therapy physiotherapist Nairobi offering sports rehabilitation massage and pain relief treatments.",
     "color": "amber",
     "slug": "massage-therapy",
-    "fullDescription": "Motion Works Physiotherapy's Massage Therapy service offers a holistic approach to wellness and pain management. Our skilled massage therapists use various techniques including Swedish, deep tissue, sports massage, and myofascial release to address specific concerns and promote overall wellbeing. Whether you're seeking relief from muscle tension, stress reduction, or recovery support, our personalized massage therapy sessions can help restore balance and improve your quality of life.",
+    "fullDescription": "MotionWorks provides expert massage therapy physiotherapist Nairobi services including sports rehabilitation massage Nairobi, deep tissue massage, and therapeutic massage for pain relief. Our massage therapists treat back pain, neck pain, muscle tension, and sports injuries. We offer sports rehabilitation massage for athletes and corporate physiotherapy massage for office workers. Our massage therapy physiotherapist Nairobi team combines manual therapy with physiotherapy techniques. Located at Princess Park Apartments, Ngong Road.",
     "benefits": [
-      "Reduced muscle tension and pain",
-      "Improved circulation and flexibility",
-      "Decreased stress and anxiety",
-      "Enhanced recovery from physical activities and injuries"
-    ]
+      "Reduced muscle tension with massage therapy physiotherapist Nairobi",
+      "Sports rehabilitation massage Nairobi for athletes",
+      "Decreased stress with therapeutic massage",
+      "Enhanced recovery from sports injuries and physical activities"
+    ],
+    "keywords": "massage therapy physiotherapist Nairobi, sports rehabilitation massage Nairobi, manual therapy physio Nairobi"
   }
 ]

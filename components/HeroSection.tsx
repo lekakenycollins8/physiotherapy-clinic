@@ -60,7 +60,7 @@ export function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-white">✨ MotionWorks Your Trusted Physio Clinic</span>
+            <span className="text-white">✨ Best Physiotherapy Clinic in Nairobi, Kenya</span>
           </motion.div>
 
           {/* Headline */}
@@ -71,8 +71,9 @@ export function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Transform Your Life Through Expert{" "}
-            <span className="text-primary/90">Physiotherapy</span>
+            Expert{" "}
+            <span className="text-primary/90">Physiotherapy</span>{" "}
+            in Nairobi
           </motion.h1>
 
           {/* Description */}
@@ -82,8 +83,8 @@ export function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Experience personalized care from certified physiotherapists. We're
-            dedicated to helping you recover, strengthen, and thrive.
+            Experience personalized care from Kenya's best certified physiotherapist with 10+ years experience. 
+            Located at Princess Park Apartments, Ngong Road, Nairobi. We're dedicated to helping you recover, strengthen, and thrive.
           </motion.p>
           
           {/* Phone Booking Emphasis */}

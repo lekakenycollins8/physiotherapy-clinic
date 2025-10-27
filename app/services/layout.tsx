@@ -2,24 +2,25 @@ import type React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Services | MotionWorks Physiotherapy Clinic",
+  title: "Physiotherapy Services in Nairobi | Best Physiotherapist Kenya - MotionWorks",
   description:
-    "Explore our comprehensive range of physiotherapy services designed to help you recover, strengthen, and thrive.",
+    "Comprehensive physiotherapy services in Nairobi: Sports injury rehabilitation, orthopedic therapy, neurological physiotherapy, pain management. Expert care at Princess Park Apartments, Ngong Road. 10+ years experience.",
+  keywords: "physiotherapy services Nairobi, sports injury rehabilitation Kenya, orthopedic physiotherapy Nairobi, neurological therapy Kenya, pain management Nairobi, best physiotherapy clinic Kenya, Princess Park physiotherapy",
   openGraph: {
-    title: "Our Services | MotionWorks Physiotherapy Clinic",
+    title: "Physiotherapy Services in Nairobi | MotionWorks Clinic",
     description:
-      "Discover how our tailored physiotherapy programs can help you achieve optimal recovery and performance.",
-    url: "https://www.motionworksphysioclinic.com/services", // Update with your actual URL
+      "Expert physiotherapy services in Nairobi, Kenya. Sports rehabilitation, orthopedic care, neurological therapy. Princess Park Apartments, Ngong Road.",
+    url: "https://www.motionworksphysioclinic.com/services",
     siteName: "MotionWorks Physiotherapy Clinic",
     locale: "en_KE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://x.com/MotionworksP?t=-mzwmz8IpMUh2vCuO0BBaA&s=09", // Update with your Twitter handle if available
-    title: "Our Services | MotionWorks Physiotherapy Clinic",
+    site: "https://x.com/MotionworksP?t=-mzwmz8IpMUh2vCuO0BBaA&s=09",
+    title: "Physiotherapy Services Nairobi | MotionWorks",
     description:
-      "Discover our tailored physiotherapy services designed for optimal recovery and performance.",
+      "Comprehensive physiotherapy services in Nairobi, Kenya. Expert care for sports injuries, pain management, and rehabilitation.",
   },
 };
 

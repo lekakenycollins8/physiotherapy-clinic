@@ -74,11 +74,30 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <title>Motion Works Physiotherapy Clinic</title>
+        <title>MotionWorks Physiotherapy Clinic | Best Physiotherapist in Nairobi, Kenya</title>
         <meta
           name="description"
-          content="Motion Works Physiotherapy Clinic - Your path to recovery and wellness."
+          content="Best physiotherapy clinic in Nairobi, Kenya. Expert physiotherapist with 10+ years experience. Located at Princess Park Apartments, along Ngong Road. Sports injury, orthopedic, neurological & pain management services."
         />
+        <meta name="keywords" content="best physiotherapist Nairobi, physiotherapy clinic Kenya, physiotherapist Princess Park, Ngong Road physiotherapy, sports injury rehabilitation Nairobi, back pain treatment Kenya, expert physiotherapist Nairobi, certified physiotherapist Kenya" />
+        <meta name="author" content="MotionWorks Physiotherapy Clinic" />
+        <meta name="geo.region" content="KE-110" />
+        <meta name="geo.placename" content="Nairobi" />
+        <meta name="geo.position" content="-1.290807;36.755807" />
+        <meta name="ICBM" content="-1.290807, 36.755807" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.motionworksphysioclinic.com/" />
+        <meta property="og:title" content="MotionWorks Physiotherapy | Best Physiotherapist in Nairobi, Kenya" />
+        <meta property="og:description" content="Expert physiotherapy services in Nairobi. 10+ years experience. Princess Park Apartments, Ngong Road. Book your session today!" />
+        <meta property="og:locale" content="en_KE" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.motionworksphysioclinic.com/" />
+        <meta name="twitter:title" content="MotionWorks Physiotherapy | Best Physiotherapist in Nairobi" />
+        <meta name="twitter:description" content="Expert physiotherapy services in Nairobi, Kenya. Princess Park Apartments, Ngong Road." />
 
         {/* ✅ Google Ads / Analytics Tag */}
         <Script
@@ -93,6 +112,98 @@ export default function RootLayout({
             gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
+          `}
+        </Script>
+        
+        {/* Structured Data - LocalBusiness Schema */}
+        <Script id="structured-data" type="application/ld+json" strategy="afterInteractive">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Physiotherapy",
+              "name": "MotionWorks Physiotherapy Clinic",
+              "image": "https://www.motionworksphysioclinic.com/logo.jpg",
+              "@id": "https://www.motionworksphysioclinic.com",
+              "url": "https://www.motionworksphysioclinic.com",
+              "telephone": "+254706143886",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Princess Park Apartments, Ngong Road",
+                "addressLocality": "Nairobi",
+                "addressRegion": "Nairobi County",
+                "addressCountry": "KE"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -1.290807,
+                "longitude": 36.755807
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "08:00",
+                  "closes": "18:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "09:00",
+                  "closes": "16:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Sunday",
+                  "opens": "09:00",
+                  "closes": "16:00"
+                }
+              ],
+              "sameAs": [
+                "https://www.facebook.com/share/1AAviYEq7t/",
+                "https://x.com/MotionworksP?t=-mzwmz8IpMUh2vCuO0BBaA&s=09",
+                "https://www.instagram.com/motio_nworks?igsh=MTM3N3Jrb2pxYzJwNA=="
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "50"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Physiotherapy Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Sports Injury Rehabilitation"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Orthopedic Physiotherapy"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Neurological Physiotherapy"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Chronic Pain Management"
+                    }
+                  }
+                ]
+              }
+            }
           `}
         </Script>
       </head>

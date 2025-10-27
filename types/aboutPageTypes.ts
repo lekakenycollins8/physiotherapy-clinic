@@ -5,6 +5,7 @@ export interface TeamMember {
     image: string;
     role: string;
     altText: string;
+    description?: string;
   }
   
   export interface ClinicValue {

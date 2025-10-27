@@ -56,7 +56,7 @@ export default function AboutPage(): JSX.Element {
                   Our Mission
                 </h2>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  At MotionWorks, our mission is to empower individuals to achieve optimal health and wellness through expert physiotherapy care.
+                  At MotionWorks Physiotherapy Clinic in Nairobi, our mission is to empower individuals across Kenya to achieve optimal health and wellness through expert physiotherapy care. As the best physiotherapy clinic in Nairobi, we provide personalized treatment at Princess Park Apartments, along Ngong Road.
                 </p>
               </div>
               <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -64,7 +64,7 @@ export default function AboutPage(): JSX.Element {
                   Our Vision
                 </h2>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  We envision a community where everyone has access to high-quality physiotherapy services that enable them to live active, pain-free lives.
+                  We envision a community where everyone in Nairobi and across Kenya has access to world-class physiotherapy services that enable them to live active, pain-free lives. Our goal is to be recognized as the leading physiotherapy clinic in Kenya.
                 </p>
               </div>
             </MotionWrapper>
@@ -124,12 +124,12 @@ export default function AboutPage(): JSX.Element {
             >
               Meet Our Team
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-5xl mx-auto" role="list">
+            <div className="flex justify-center max-w-2xl mx-auto" role="list">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="w-full h-full transform transition-all duration-500 hover:scale-103 hover:-translate-y-2 
-                  shadow-lg hover:shadow-xl rounded-2xl overflow-hidden bg-white"
+                  className="w-full transform transition-all duration-500 hover:scale-102 hover:-translate-y-2 
+                  shadow-xl hover:shadow-2xl rounded-2xl overflow-hidden bg-white"
                 >
                   <TeamMember member={member} index={index} />
                 </div>

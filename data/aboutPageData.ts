@@ -4,21 +4,10 @@ import { TeamMember, ClinicValue } from "@/types/aboutPageTypes";
 export const teamMembers: TeamMember[] = [
   {
     name: "Brian Ochieng",
-    role: "Bsc.physiotherapy",
-    image: "/brian.jpg",
-    altText: "Professional headshot of Brian, a male physiotherapist",
-  },
-  {
-    name: "Elizabeth Kerubo",
-    role: "Bsc.physiotherapy",
-    image: "elizabeth.jpg",
-    altText: "Professional portrait of John Doe, male orthopaedic specialist with dark hair wearing a blue medical uniform",
-  },
-  {
-    name: "Sharon Sara",
-    role: "Bsc.physiotherapy",
-    image: "Sharon.jpg",
-    altText: "Professional portrait of Sharon,a female orthopaedic specialist with braided hair ",
+    role: "Lead Physiotherapist",
+    image: "/brian.jpeg",
+    altText: "Brian Ochieng - Lead senior physiotherapist with over 10 years of experience in Nairobi, Kenya",
+    description: "Lead senior physiotherapist with over 10yrs of experience. Holds a bachelors degree in physiotherapy from Jkuat.",
   },
 ];
 

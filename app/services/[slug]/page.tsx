@@ -66,7 +66,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 }`}
               />
             </div>
-            <h1 className="text-3xl font-bold mb-4 text-gray-800">{title}</h1>
+            <h1 className="text-3xl font-bold mb-4 text-gray-800">{title} in Nairobi</h1>
+            <p className="text-sm text-gray-500 mb-4">📍 Princess Park Apartments, Ngong Road, Nairobi | 📞 +254 706 143 886</p>
             
             {/* Prominent Phone Booking CTA */}
             <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-8">

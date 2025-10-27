@@ -11,14 +11,16 @@ const Footer = () => {
             <Link href="/" className="block mb-4">
               <Image
               src="/logo.jpg"
-              alt="MotionWorks Physiotherapy"
+              alt="MotionWorks Physiotherapy - Best Physiotherapist in Nairobi"
               width={100}
               height={20}
               className="h-auto"
               />
             </Link>
             <h3 className="text-lg font-semibold mb-2">MotionWorks Physiotherapy</h3>
-            <p>Expert Physiotherapy for Your Health & Wellness</p>
+            <p className="mb-2">Best Physiotherapy Clinic in Nairobi, Kenya</p>
+            <p className="text-sm">📍 Princess Park Apartments, Ngong Road</p>
+            <p className="text-sm">📞 +254 706 143 886</p>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
