@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, MessageCircle, CheckCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const backgroundImages = [
@@ -21,8 +21,11 @@ export function HeroSection() {
     return () => clearInterval(interval);
   }, []);
 
+  const whatsappMessage = "Hi, I'd like to book a physio session";
+  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
-    <section role="banner" className="relative min-h-screen flex items-center">
+    <section role="banner" className="relative py-20 md:py-32 flex items-center">
       {/* Fixed background container with dark fallback */}
       <div className="absolute inset-0 z-0 bg-gray-900">
         <AnimatePresence mode="wait" initial={false}>
@@ -55,99 +58,84 @@ export function HeroSection() {
         <div className="max-w-3xl">
           {/* Trusted Tag */}
           <motion.div
-            className="inline-block bg-blue-500/20 backdrop-blur-md rounded-full px-4 py-2 mb-6"
+            className="inline-block bg-green-500/20 backdrop-blur-md rounded-full px-4 py-2 mb-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-white">✨ Best Physiotherapy Clinic in Nairobi, Kenya</span>
+            <span className="text-white font-medium">📍 Ngong Road, Nairobi • Same-Day Sessions Available</span>
           </motion.div>
 
           {/* Headline */}
           <motion.h1
-            className="text-4xl md:text-6xl sm:text-5xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl sm:text-5xl font-bold text-white mb-4 leading-tight"
             style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.7)" }}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Expert{" "}
-            <span className="text-primary/90">Physiotherapy</span>{" "}
-            in Nairobi
+            Get Fast Relief from{" "}
+            <span className="text-green-400">Back & Neck Pain</span>{" "}
+            Today
           </motion.h1>
 
           {/* Description */}
           <motion.p
-            className="text-xl text-white/90 mb-4 leading-relaxed"
+            className="text-xl text-white/90 mb-6 leading-relaxed"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Experience personalized care from Kenya's best certified physiotherapist with 10+ years experience. 
-            Located at Princess Park Apartments, Ngong Road, Nairobi. We're dedicated to helping you recover, strengthen, and thrive.
+            Same-day physiotherapy sessions in Ngong Road, Nairobi
           </motion.p>
           
-          {/* Phone Booking Emphasis */}
+          {/* Trust Bullets */}
           <motion.div
-            className="bg-green-500/20 backdrop-blur-md rounded-lg px-6 py-3 mb-8 inline-block"
+            className="flex flex-col gap-2 mb-6"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
           >
-            <span className="text-white font-medium">📞 Call Now for Immediate Session Booking - No Waiting!</span>
+            <div className="flex items-center gap-2 text-white">
+              <CheckCircle className="w-5 h-5 text-green-400" />
+              <span className="text-lg">Same-day appointments available</span>
+            </div>
+            <div className="flex items-center gap-2 text-white">
+              <CheckCircle className="w-5 h-5 text-green-400" />
+              <span className="text-lg">Licensed physiotherapists with 10+ years experience</span>
+            </div>
+            <div className="flex items-center gap-2 text-white">
+              <CheckCircle className="w-5 h-5 text-green-400" />
+              <span className="text-lg">Convenient Ngong Road location (Princess Park Apartments)</span>
+            </div>
           </motion.div>
 
           {/* Call-to-Actions */}
           <motion.div
-            className="flex flex-wrap gap-4"
+            className="flex flex-wrap gap-4 mb-6"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <a
-              href="tel:+254706143886"
-              aria-label="Call now to book your physiotherapy session"
-              className="group bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp now to book your physiotherapy session"
+              className="group bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-semibold text-lg"
             >
-              <Phone className="mr-2" />
-              Call to Book Session
+              <MessageCircle className="mr-2 w-6 h-6" />
+              WhatsApp Now
               <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
-            <Link
-              href="/contact"
-              aria-label="Book a consultation appointment online"
-              className="group bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 hover:shadow-lg"
+            <a
+              href="tel:+254706143886"
+              aria-label="Call now to book your physiotherapy session"
+              className="group bg-white/20 hover:bg-white/30 backdrop-blur-md text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 hover:shadow-lg border border-white/30 font-semibold text-lg"
             >
-              Online Booking Form
-            </Link>
-          </motion.div>
-
-          {/* Phone Booking Benefits */}
-          <motion.div
-            className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <motion.div
-              className="bg-green-500/20 backdrop-blur-md rounded-lg p-4 text-white hover:shadow-lg"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              <div className="text-lg font-bold">⚡ Instant</div>
-              <div className="text-sm text-white/80">Immediate Booking</div>
-            </motion.div>
-            <motion.div
-              className="bg-green-500/20 backdrop-blur-md rounded-lg p-4 text-white hover:shadow-lg"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <div className="text-lg font-bold">💬 Personal</div>
-              <div className="text-sm text-white/80">Speak to Our Team</div>
-            </motion.div>
-            
+              <Phone className="mr-2 w-6 h-6" />
+              Call Now
+            </a>
           </motion.div>
         </div>
       </div>

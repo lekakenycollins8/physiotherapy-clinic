@@ -6,6 +6,8 @@ import { Poppins } from "next/font/google"
 import Header from "@/components/header"
 import PageHeader from "@/components/PageHeader"
 import Footer from "@/components/footer"
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp"
+import { StickyCTA } from "@/components/StickyCTA"
 import { usePathname } from "next/navigation"
 import Script from "next/script"
 import { useEffect } from "react"
@@ -212,6 +214,8 @@ export default function RootLayout({
         {pathname !== "/" && <PageHeader title={pageTitle} />}
         <main className="flex-grow">{children}</main>
         <Footer />
+        <FloatingWhatsApp />
+        <StickyCTA />
       </body>
     </html>
   )

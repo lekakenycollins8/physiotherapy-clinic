@@ -2,12 +2,14 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
-import { Phone, Mail, MapPin, Send, User, AtSign } from "lucide-react";
+import { Phone, Mail, MapPin, Send, User, AtSign, MessageCircle } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
+  const whatsappMessage = "Hi, I'd like to book a physio session";
+  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -38,32 +40,65 @@ export default function ContactPage() {
           <h1 className="text-5xl font-bold text-gray-800 mb-4 relative bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Book Your Session</h1>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">Ready to start your recovery journey? Call us directly for immediate booking confirmation!</p>
           
-          {/* Prominent Phone CTA */}
-          <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 max-w-md mx-auto mb-8">
-            <div className="text-3xl mb-3">📞</div>
-            <h2 className="text-2xl font-bold text-green-800 mb-2">Call to Book Now</h2>
-            <a href="tel:+254706143886" className="text-3xl font-bold text-green-600 hover:text-green-700 transition-colors">
-              +254 706 143 886
-            </a>
-            <p className="text-green-700 text-sm mt-2">Instant confirmation • No forms needed • Speak to our team</p>
+          {/* Prominent CTAs */}
+          <div className="bg-gradient-to-br from-green-50 to-blue-50 border-2 border-green-200 rounded-xl p-6 max-w-lg mx-auto mb-8">
+            <div className="text-3xl mb-3">⚡</div>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Book Instantly</h2>
+            <div className="flex flex-col sm:flex-row gap-3 mb-4">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp Now
+              </a>
+              <a href="tel:+254706143886" className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+                <Phone className="w-5 h-5" />
+                Call Now
+              </a>
+            </div>
+            <p className="text-gray-700 text-sm text-center">Same-day appointments • Instant confirmation • No waiting</p>
           </div>
           
-          <p className="text-gray-500 text-sm">Or use the form below if you prefer online booking</p>
+          <p className="text-gray-500 text-sm mb-2">Or use the form below if you prefer</p>
         </div>
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-8 md:p-12">
               <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
                 <div className="flex items-center justify-center gap-3 mb-3">
-                  <Phone className="w-6 h-6 text-green-600" />
-                  <span className="text-lg font-semibold text-green-800">Prefer to call? Get instant booking!</span>
+                  <MessageCircle className="w-6 h-6 text-green-600" />
+                  <span className="text-lg font-semibold text-green-800">Skip the form - book instantly!</span>
                 </div>
-                <a href="tel:+254706143886" className="block text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                  Call +254 706 143 886 Now
-                </a>
+                <div className="flex gap-2">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    <MessageCircle className="w-4 h-4" />
+                    WhatsApp
+                  </a>
+                  <a href="tel:+254706143886" className="flex-1 text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    <Phone className="w-4 h-4" />
+                    Call
+                  </a>
+                </div>
               </div>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Online Booking Form</h2>
-              {success && <p className={`mb-4 text-lg ${success.includes('Failed') ? 'text-red-500' : 'text-green-500'}`}>{success}</p>}
+              {success && (
+                <div className={`mb-4 p-4 rounded-lg ${success.includes('Failed') ? 'bg-red-50 border border-red-200' : 'bg-green-50 border border-green-200'}`}>
+                  <p className={`text-lg font-medium ${success.includes('Failed') ? 'text-red-700' : 'text-green-700'}`}>{success}</p>
+                  {success.includes('Failed') && (
+                    <div className="mt-3">
+                      <p className="text-sm text-red-600 mb-2">Try these instant booking options instead:</p>
+                      <div className="flex gap-2">
+                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-1">
+                          <MessageCircle className="w-4 h-4" />
+                          WhatsApp
+                        </a>
+                        <a href="tel:+254706143886" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-1">
+                          <Phone className="w-4 h-4" />
+                          Call
+                        </a>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>

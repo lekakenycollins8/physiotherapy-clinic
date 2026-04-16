@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, MessageCircle, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { WhyChooseUs } from "./WhyChooseUs";
 
@@ -23,6 +23,9 @@ const StatCard = ({ number, label }: StatCardProps) => (
 );
 
 export function FeaturedSection() {
+  const whatsappMessage = "Hi, I'd like to book a physio session";
+  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <motion.section
       className="py-20 bg-gradient-to-b from-blue-1000 to-white"
@@ -95,20 +98,23 @@ export function FeaturedSection() {
                 </motion.div>
               ))}
             </div>
-            <div className="flex gap-4">
-              <Link
-                href="/about"
-                className="bg-blue-600 text-white px-6 py-3 rounded-full inline-flex items-center hover:bg-blue-700 transition-colors"
+            <div className="flex flex-wrap gap-4">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white px-6 py-3 rounded-full inline-flex items-center hover:bg-green-700 transition-colors font-semibold"
               >
-                Learn More
-                <ArrowRight className="ml-2" />
-              </Link>
-              <Link
-                href="/about"
-                className="bg-gray-100 text-gray-800 px-6 py-3 rounded-full inline-flex items-center hover:bg-gray-200 transition-colors"
+                <MessageCircle className="mr-2 w-5 h-5" />
+                WhatsApp Now
+              </a>
+              <a
+                href="tel:+254706143886"
+                className="bg-blue-600 text-white px-6 py-3 rounded-full inline-flex items-center hover:bg-blue-700 transition-colors font-semibold"
               >
-                Meet Our Team
-              </Link>
+                <Phone className="mr-2 w-5 h-5" />
+                Call Now
+              </a>
             </div>
           </motion.div>
         </div>

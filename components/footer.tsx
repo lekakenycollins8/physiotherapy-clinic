@@ -1,8 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Instagram } from "lucide-react"
+import { Facebook, Twitter, Instagram, MessageCircle } from "lucide-react"
 
 const Footer = () => {
+  const whatsappMessage = "Hi, I'd like to book a physio session";
+  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  
   return (
     <footer className="bg-gray-100 text-gray-600 bg-gradient-to-b from-blue-100 to-white">
       <div className="container mx-auto px-4 py-8">
@@ -19,8 +22,14 @@ const Footer = () => {
             </Link>
             <h3 className="text-lg font-semibold mb-2">MotionWorks Physiotherapy</h3>
             <p className="mb-2">Best Physiotherapy Clinic in Nairobi, Kenya</p>
-            <p className="text-sm">📍 Princess Park Apartments, Ngong Road</p>
-            <p className="text-sm">📞 +254 706 143 886</p>
+            <p className="text-sm mb-2">📍 Princess Park Apartments, Ngong Road</p>
+            <a href="tel:+254706143886" className="text-sm text-blue-600 hover:text-blue-700 font-medium block mb-2">
+              📞 +254 706 143 886
+            </a>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors mt-2">
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp Us
+            </a>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>

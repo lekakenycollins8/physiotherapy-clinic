@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { ServiceList } from "@/components/ServiceList";
 import services from "@/data/services.json";
 
 export function ServicesSection() {
   const featuredServices = services.slice(0, 4);
+  const whatsappMessage = "Hi, I'd like to book a physio session";
+  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section
@@ -80,22 +82,35 @@ export function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          className="text-center mt-12"
         >
+          <p className="text-gray-700 mb-6 text-lg font-medium">
+            👉 Call or WhatsApp to confirm availability for any service
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-6">
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full inline-flex items-center transition-all duration-300 font-semibold"
+            >
+              <MessageCircle className="mr-2 w-5 h-5" />
+              WhatsApp Now
+            </a>
+            <a
+              href="tel:+254706143886"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full inline-flex items-center transition-all duration-300 font-semibold"
+            >
+              <Phone className="mr-2 w-5 h-5" />
+              Call Now
+            </a>
+          </div>
           <Link
             href="/services"
-            aria-label="View all specialized physiotherapy services"
-            className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full inline-flex items-center hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+            className="text-blue-600 hover:text-blue-700 text-sm inline-flex items-center"
           >
-            <span>View All Services</span>
-            <motion.span
-              initial={{ x: 0 }}
-              whileHover={{ x: 5 }}
-              className="inline-flex ml-2"
-              aria-hidden="true"
-            >
-              <ArrowRight className="w-5 h-5 transition-transform duration-300" />
-            </motion.span>
+            <span>View all services</span>
+            <ArrowRight className="w-4 h-4 ml-1" />
           </Link>
         </motion.div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Star, ChevronDown } from "lucide-react";  
+import { Menu, X, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Star, ChevronDown, MessageCircle } from "lucide-react";  
 import { FaTiktok } from "react-icons/fa";
 
 // Shadcn UI Components
@@ -26,6 +26,9 @@ import {
 
 const Header = () => {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const whatsappMessage = "Hi, I'd like to book a physio session";
+  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  
   return (
     <>
       {/* Topbar - visible only on desktop */}
@@ -153,25 +156,24 @@ const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Desktop Appointment Button */}
-          <div className="hidden md:block">
-            <Link href="/contact" passHref>
-              <div className="flex gap-2">
-                <a href="tel:+254706143886">
-                  <Button
-                    className="rounded-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white flex items-center gap-1"
-                  >
-                    <Phone className="w-4 h-4" />
-                    Call to Book
-                  </Button>
-                </a>
-                <Button
-                  className="rounded-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white"
-                >
-                  Online Form
-                </Button>
-              </div>
-            </Link>
+          {/* Desktop Appointment Buttons */}
+          <div className="hidden md:flex gap-2">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <Button
+                className="rounded-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white flex items-center gap-1 font-semibold"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp
+              </Button>
+            </a>
+            <a href="tel:+254706143886">
+              <Button
+                className="rounded-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-1"
+              >
+                <Phone className="w-4 h-4" />
+                Call
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Navigation using Sheet */}
@@ -260,20 +262,28 @@ const Header = () => {
                 </div>
                 
                 <div className="mt-4 space-y-2">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block">
+                    <Button
+                      className="w-full rounded-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2 font-semibold"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      WhatsApp Now
+                    </Button>
+                  </a>
                   <a href="tel:+254706143886" className="block">
                     <Button
-                      className="w-full rounded-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2"
+                      className="w-full rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-2"
                     >
                       <Phone className="w-4 h-4" />
-                      Call to Book Session
+                      Call to Book
                     </Button>
                   </a>
                   <Link href="/contact" className="block">
                     <Button
                       variant="outline"
-                      className="w-full rounded-full border-blue-600 text-blue-600 hover:bg-blue-50"
+                      className="w-full rounded-full border-gray-400 text-gray-700 hover:bg-gray-50"
                     >
-                      Online Booking Form
+                      Online Form
                     </Button>
                   </Link>
                 </div>

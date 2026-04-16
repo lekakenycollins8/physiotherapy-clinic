@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, MessageCircle, Phone } from "lucide-react";
 import SliderType from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,6 +32,9 @@ const testimonials = [
 ];
 
 export function TestimonialsSection() {
+  const whatsappMessage = "Hi, I'd like to book a physio session";
+  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -44,7 +47,7 @@ export function TestimonialsSection() {
   };
 
   return (
-    <section className="py-20 bg-gray-50 bg-gradient-to-b from-blue-100 to-white h-screen w-full">
+    <section className="py-20 bg-gray-50 bg-gradient-to-b from-blue-100 to-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -89,6 +92,36 @@ export function TestimonialsSection() {
               </div>
             ))}
           </Slider>
+        </motion.div>
+
+        {/* CTA after testimonials */}
+        <motion.div
+          className="text-center mt-12"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <p className="text-gray-700 mb-6 text-lg font-medium">
+            👉 Join our satisfied patients — book your session today
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full inline-flex items-center transition-all duration-300 font-semibold"
+            >
+              <MessageCircle className="mr-2 w-5 h-5" />
+              WhatsApp Now
+            </a>
+            <a
+              href="tel:+254706143886"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full inline-flex items-center transition-all duration-300 font-semibold"
+            >
+              <Phone className="mr-2 w-5 h-5" />
+              Call Now
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
