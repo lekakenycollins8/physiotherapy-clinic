@@ -109,11 +109,7 @@ const Header = () => {
                         Physiotherapy services
                       </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link href="/services/chiropractic-services" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Chiropractic services
-                      </Link>
-                    </DropdownMenuItem>
+                    
                     <DropdownMenuItem asChild>
                       <Link href="/services/orthopedic-physiotherapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
                         Orthopedic manual therapy
@@ -121,7 +117,22 @@ const Header = () => {
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link href="/services/sports-rehabilitation" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Sports massage therapy
+                        Sports & Gym Injuries
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/neurological-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Neurorehabilitation
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/post-surgery-rehabilitation" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Post surgery rehabilitation
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/kegel-exercises" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Kegel exercises
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -210,14 +221,21 @@ const Header = () => {
                       <Link href="/services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Physiotherapy services
                       </Link>
-                      <Link href="/services/chiropractic-services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Chiropractic services
-                      </Link>
+                      
                       <Link href="/services/orthopedic-physiotherapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Orthopaedic manual therapy
                       </Link>
                       <Link href="/services/sports-rehabilitation" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Sports massage therapy
+                        Sports and gym injuries
+                      </Link>
+                      <Link href="/services/neurological-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Neurorehabilitation
+                      </Link>
+                      <Link href="/services/post-surgery-rehabilitation" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Post surgery rehabilitation
+                      </Link>
+                      <Link href="/services/kegel-exercises" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Kegel exercises
                       </Link>
                       <Link href="/services/massage-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Massage therapy

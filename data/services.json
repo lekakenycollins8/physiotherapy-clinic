@@ -1,32 +1,47 @@
 [
   {
     "icon": "ActivityIcon",
-    "title": "Sports Injury Rehabilitation",
-    "description": "Recover faster and enhance your athletic performance with our specialized sports injury rehabilitation programs in Nairobi.",
+    "title": "Sports and Gym Injuries",
+    "description": "Recover faster and enhance your athletic performance with our specialized sports and gym injury rehabilitation programs in Nairobi.",
     "color": "blue",
     "slug": "sports-rehabilitation",
-    "fullDescription": "MotionWorks Physiotherapy offers the best sports injury physiotherapy in Nairobi for athletes of all levels. Our sports rehabilitation massage and manual therapy techniques help you recover from sports injuries faster. Located at Princess Park Apartments, Ngong Road, we provide physiotherapy for athletes in Nairobi with personalized care. Whether you're dealing with sprains, strains, or post-injury recovery, our expert team delivers comprehensive sports injury rehabilitation Nairobi trusts.",
+    "fullDescription": "MotionWorks Physiotherapy offers the best sports injury physiotherapy in Nairobi for athletes of all levels. Our sports rehabilitation massage and manual therapy techniques help you recover from sports injuries faster. Located at Princess Park Apartments, Ngong Road, we provide physiotherapy for athletes in Nairobi with personalized care. Whether you're dealing with sprains, strains, or post-injury recovery, our expert team delivers comprehensive sports and gym injury rehabilitation Nairobi trusts.",
     "benefits": [
-      "Faster recovery from sports-related injuries",
+      "Faster recovery from sports and gym-related injuries",
       "Improved athletic performance with sports rehabilitation massage Nairobi",
       "Personalized training programs for athletes",
       "Effective injury prevention strategies"
     ],
-    "keywords": "sports injury physiotherapy Nairobi, sports rehabilitation massage Nairobi, physiotherapy for athletes Nairobi, sports injury rehabilitation Nairobi"
+    "keywords": "sports injury physiotherapy Nairobi, sports rehabilitation massage Nairobi, physiotherapy for athletes Nairobi, sports and gym injury rehabilitation Nairobi"
   },
   {
     "icon": "BrainIcon",
-    "title": "Neurological Physiotherapy & Rehabilitation",
-    "description": "Regain function and improve your quality of life with our expert neurological physiotherapy and rehabilitation services for conditions like stroke.",
+    "title": "Neurorehabilitation e.g stroke, parkinson's",
+    "description": "Regain function and improve your quality of life with our expert neurorehabilitation services for conditions like stroke and Parkinson's.",
     "color": "purple",
     "slug": "neurological-therapy",
-    "fullDescription": "Motion Works Physiotherapy's Neurological Therapy services cater to patients with various neurological conditions, including stroke, multiple sclerosis, and Parkinson's disease. Our specialized physiotherapists employ evidence-based techniques to help patients regain mobility, improve coordination, and enhance their overall quality of life.",
+    "fullDescription": "Motion Works Physiotherapy's Neurorehabilitation services cater to patients with various neurological conditions, including stroke, multiple sclerosis, and Parkinson's disease. Our specialized physiotherapists employ evidence-based techniques to help patients regain mobility, improve coordination, and enhance their overall quality of life.",
     "benefits": [
       "Improved mobility and balance",
       "Enhanced cognitive function",
       "Increased independence in daily activities",
       "Personalized neurological treatment plans"
     ]
+  },
+  {
+    "icon": "ScissorsIcon",
+    "title": "Post Surgery Rehabilitation",
+    "description": "Comprehensive post-surgery rehabilitation to help you recover faster and regain mobility after surgical procedures.",
+    "color": "orange",
+    "slug": "post-surgery-rehabilitation",
+    "fullDescription": "MotionWorks Physiotherapy provides expert post-surgery rehabilitation services to help patients recover effectively after surgical procedures. Our specialized rehabilitation programs are designed to restore mobility, strength, and function following orthopedic surgeries, joint replacements, and other surgical interventions. Located at Princess Park Apartments, Ngong Road, we offer personalized post-surgery rehabilitation Nairobi trusts for optimal recovery outcomes.",
+    "benefits": [
+      "Faster recovery after surgery",
+      "Improved mobility and strength",
+      "Reduced pain and inflammation",
+      "Personalized rehabilitation programs"
+    ],
+    "keywords": "post surgery rehabilitation Nairobi, post-surgery physiotherapy Nairobi, rehabilitation after surgery Nairobi"
   },
   {
     "icon": "HeartIcon",
@@ -131,5 +146,20 @@
       "Enhanced recovery from sports injuries and physical activities"
     ],
     "keywords": "massage therapy physiotherapist Nairobi, sports rehabilitation massage Nairobi, manual therapy physio Nairobi"
+  },
+  {
+    "icon": "HeartHandshakeIcon",
+    "title": "Kegel Exercises",
+    "description": "Specialized pelvic floor exercises and Kegel training to improve bladder control and pelvic health.",
+    "color": "rose",
+    "slug": "kegel-exercises",
+    "fullDescription": "MotionWorks Physiotherapy offers expert Kegel exercises and pelvic floor rehabilitation services in Nairobi. Our specialized physiotherapists provide personalized Kegel exercise programs to help patients improve bladder control, strengthen pelvic floor muscles, and address pelvic health issues. Whether you're dealing with postpartum recovery, incontinence, or pelvic floor weakness, our expert team delivers comprehensive Kegel exercise training Nairobi trusts. Located at Princess Park Apartments, Ngong Road.",
+    "benefits": [
+      "Improved bladder control",
+      "Strengthened pelvic floor muscles",
+      "Enhanced pelvic health",
+      "Personalized Kegel exercise programs"
+    ],
+    "keywords": "Kegel exercises Nairobi, pelvic floor exercises Nairobi, pelvic floor physiotherapy Nairobi"
   }
 ]
