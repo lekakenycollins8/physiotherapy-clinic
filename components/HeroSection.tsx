@@ -25,7 +25,7 @@ export function HeroSection() {
   const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <section role="banner" className="relative py-20 md:py-32 flex items-center">
+    <section role="banner" className="relative py-8 md:py-10 flex items-center">
       {/* Fixed background container with dark fallback */}
       <div className="absolute inset-0 z-0 bg-gray-900">
         <AnimatePresence mode="wait" initial={false}>
