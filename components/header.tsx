@@ -105,8 +105,16 @@ const Header = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-56 bg-white shadow-lg rounded-md p-1 border border-gray-200">
                     <DropdownMenuItem asChild>
-                      <Link href="/services" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Physiotherapy services
+                      <Link
+                        href="/services"
+                        className="flex flex-col w-full px-3 py-2 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors"
+                      >
+                        <span className="text-sm font-medium">
+                          Physiotherapy Services
+                        </span>
+                        <span className="text-xs text-gray-600">
+                          Specialising in back pain, neck pain, shoulder pain, knee pain, sciatica, etc.
+                        </span>
                       </Link>
                     </DropdownMenuItem>
                     
@@ -121,8 +129,10 @@ const Header = () => {
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link href="/services/neurological-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Neurorehabilitation
+                      <Link href="/services/neurological-therapy" className="flex flex-col justify-start w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Neurorehabilitation <span className="text-xs text-gray-600">
+                           e.g. Stroke, Parkinson's, Multiple Sclerosis
+                        </span>
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -132,12 +142,17 @@ const Header = () => {
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link href="/services/kegel-exercises" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
-                        Kegel exercises
+                        Men & Women Health physiotherapy(Kegels)
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link href="/services/massage-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
                         Massage therapy
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/services/dry-cupping-therapy" className="w-full px-3 py-2 text-sm hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors">
+                        Dry cupping therapy
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -218,8 +233,16 @@ const Header = () => {
                   </div>
                   {mobileServicesOpen && (
                     <div className="pl-6 space-y-1 mt-1 mb-2">
-                      <Link href="/services" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Physiotherapy services
+                      <Link
+                        href="/services"
+                        className="flex flex-col w-full px-3 py-2 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors"
+                      >
+                        <span className="text-sm font-medium">
+                          Physiotherapy Services
+                        </span>
+                        <span className="text-xs text-gray-600">
+                          Specialising in back pain, neck pain, shoulder pain, knee pain, sciatica, etc.
+                        </span>
                       </Link>
                       
                       <Link href="/services/orthopedic-physiotherapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
@@ -229,16 +252,21 @@ const Header = () => {
                         Sports and gym injuries
                       </Link>
                       <Link href="/services/neurological-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Neurorehabilitation
+                        Neurorehabilitation <span className="text-xs text-gray-600">
+                           e.g. Stroke, Parkinson's, Multiple Sclerosis
+                        </span>
                       </Link>
                       <Link href="/services/post-surgery-rehabilitation" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Post surgery rehabilitation
                       </Link>
                       <Link href="/services/kegel-exercises" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
-                        Kegel exercises
+                        Men & Women Health physiotherapy (Kegels)
                       </Link>
                       <Link href="/services/massage-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Massage therapy
+                      </Link>
+                      <Link href="/services/dry-cupping-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
+                        Dry cupping therapy
                       </Link>
                       <Link href="/services/home-based-therapy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 text-sm">
                         Home based

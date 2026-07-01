@@ -134,8 +134,8 @@
   },
   {
     "icon": "HeartHandshakeIcon",
-    "title": "Kegel Exercises",
-    "description": "Specialized pelvic floor exercises and Kegel training to improve bladder control and pelvic health.",
+    "title": "Men & Women Health physiotherapy(Kegels)",
+    "description": "Specialized pelvic floor exercises and Kegel to improve erectile and sexual dysfunction, bladder control, pelvic health.",
     "color": "rose",
     "slug": "kegel-exercises",
     "fullDescription": "MotionWorks Physiotherapy offers expert Kegel exercises and pelvic floor rehabilitation services in Nairobi. Our specialized physiotherapists provide personalized Kegel exercise programs to help patients improve bladder control, strengthen pelvic floor muscles, and address pelvic health issues. Whether you're dealing with postpartum recovery, incontinence, or pelvic floor weakness, our expert team delivers comprehensive Kegel exercise training Nairobi trusts. Located at Princess Park Apartments, Ngong Road.",
@@ -146,5 +146,21 @@
       "Personalized Kegel exercise programs"
     ],
     "keywords": "Kegel exercises Nairobi, pelvic floor exercises Nairobi, pelvic floor physiotherapy Nairobi"
-  }
+  },
+  {
+  "icon": "CircleDotIcon",
+  "title": "Dry Cupping Therapy",
+  "description": "Professional dry cupping therapy in Nairobi to relieve muscle tension, reduce pain, improve circulation, and support faster recovery.",
+  "color": "teal",
+  "slug": "dry-cupping-therapy",
+  "fullDescription": "MotionWorks Physiotherapy offers professional dry cupping therapy in Nairobi to help relieve muscle tension, reduce pain, improve blood circulation, and promote natural healing. Our qualified physiotherapists use safe, evidence-based cupping techniques alongside physiotherapy treatments to address back pain, neck pain, shoulder pain, sports injuries, and chronic muscle tightness. Located at Princess Park Apartments, Ngong Road, we provide personalized dry cupping therapy that complements your rehabilitation and recovery plan.",
+  "benefits": [
+    "Relieves muscle tension and stiffness",
+    "Reduces back, neck, and shoulder pain",
+    "Improves blood circulation and tissue healing",
+    "Supports faster recovery from sports injuries",
+    "Complements physiotherapy and manual therapy treatments"
+  ],
+  "keywords": "dry cupping therapy Nairobi, cupping therapy Nairobi, physiotherapy cupping Nairobi, muscle pain treatment Nairobi, sports recovery cupping Nairobi"
+}
 ]
