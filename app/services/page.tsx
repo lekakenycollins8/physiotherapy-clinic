@@ -32,7 +32,7 @@ export default function ServicesPage() {
           <div className="mt-6 flex flex-col items-center gap-4">
             <div className="bg-green-100 text-green-800 px-6 py-3 rounded-lg font-medium shadow-sm border border-green-300 flex items-center gap-2">
               <span className="text-2xl">📞</span>
-              <span>Call +254 706 143 886 to Book Any Service Instantly!</span>
+              <span>Call +254 180 334423 to Book Any Service Instantly!</span>
             </div>
             <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg text-sm font-medium shadow-sm border border-yellow-300">
               Note: We accept cash payments only ranging from 3000.
@@ -64,7 +64,7 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+254706143886"
+              href="tel:+254180334423"
               className="bg-green-600 text-white px-8 py-3 rounded-full inline-flex items-center hover:bg-green-700 transition-colors font-semibold"
             >
               <Phone className="mr-2" />

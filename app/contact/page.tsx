@@ -9,7 +9,7 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
   const whatsappMessage = "Hi, I'd like to book a physio session";
-  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/254180334423?text=${encodeURIComponent(whatsappMessage)}`;
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Now
               </a>
-              <a href="tel:+254706143886" className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+              <a href="tel:+254180334423" className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                     <MessageCircle className="w-4 h-4" />
                     WhatsApp
                   </a>
-                  <a href="tel:+254706143886" className="flex-1 text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+                  <a href="tel:+254180334423" className="flex-1 text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2">
                     <Phone className="w-4 h-4" />
                     Call
                   </a>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                           <MessageCircle className="w-4 h-4" />
                           WhatsApp
                         </a>
-                        <a href="tel:+254706143886" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-1">
+                        <a href="tel:+254180334423" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-1">
                           <Phone className="w-4 h-4" />
                           Call
                         </a>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-blue-200 text-sm">Call Us</p>
-                    <p className="text-lg font-medium">+254 706 143 886</p>
+                    <p className="text-lg font-medium">+254 180 334423</p>
                     {/* <p className="text-lg font-medium">+254 740 277 532</p> */}
                   </div>
                 </div>

@@ -127,7 +127,7 @@ export default function RootLayout({
               "image": "https://www.motionworksphysioclinic.com/logo.jpg",
               "@id": "https://www.motionworksphysioclinic.com",
               "url": "https://www.motionworksphysioclinic.com",
-              "telephone": "+254706143886",
+              "telephone": "+254180334423",
               "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",

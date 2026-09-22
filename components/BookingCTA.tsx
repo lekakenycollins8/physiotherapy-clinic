@@ -7,7 +7,7 @@ import { ArrowRight, Calendar, MessageCircle, Phone } from "lucide-react";
 
 export function BookingCTA() {
   const whatsappMessage = "Hi, I'd like to book a physio session";
-  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/254180334423?text=${encodeURIComponent(whatsappMessage)}`;
   
   return (
     <section className="py-20 relative overflow-hidden">
@@ -71,7 +71,7 @@ export function BookingCTA() {
             </a>
 
             <a
-              href="tel:+254706143886"
+              href="tel:+254180334423"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-5 rounded-full inline-flex items-center transition-all duration-300 shadow-lg text-lg font-semibold"
             >
               <Phone className="mr-2 w-6 h-6" />

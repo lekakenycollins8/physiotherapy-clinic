@@ -33,7 +33,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   const whatsappMessage = "Hi, I'd like to book a physio session";
-  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/254180334423?text=${encodeURIComponent(whatsappMessage)}`;
 
   const sliderSettings = {
     dots: false,
@@ -115,7 +115,7 @@ export function TestimonialsSection() {
               WhatsApp Now
             </a>
             <a
-              href="tel:+254706143886"
+              href="tel:+254180334423"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full inline-flex items-center transition-all duration-300 font-semibold"
             >
               <Phone className="mr-2 w-5 h-5" />

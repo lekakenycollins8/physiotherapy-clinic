@@ -67,27 +67,27 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               />
             </div>
             <h1 className="text-3xl font-bold mb-4 text-gray-800">{title} in Nairobi</h1>
-            <p className="text-sm text-gray-500 mb-4">📍 Princess Park Apartments, Ngong Road, Nairobi | 📞 +254 706 143 886</p>
+            <p className="text-sm text-gray-500 mb-4">📍 Princess Park Apartments, Ngong Road, Nairobi | 📞 +254 180 334423</p>
             
             {/* Prominent Phone Booking CTA */}
             <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-8">
               <div className="text-center">
                 <div className="text-3xl mb-3">📞</div>
                 <h2 className="text-xl font-bold text-green-800 mb-2">Book This Service Now</h2>
-                <a href="tel:+254706143886" className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors block mb-2">
-                  +254 706 143 886
+                <a href="tel:+254180334423" className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors block mb-2">
+                  +254 180 334423
                 </a>
                 <p className="text-green-700 text-sm mb-4">Call for instant session booking • Speak to our specialists • Get immediate confirmation</p>
                 <div className="flex flex-wrap justify-center gap-3">
                   <a
-                    href="tel:+254706143886"
+                    href="tel:+254180334423"
                     className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full inline-flex items-center transition-colors font-semibold"
                   >
                     <Phone className="mr-2 w-4 h-4" />
                     Call to Book Session
                   </a>
                   <a
-                    href="https://wa.me/+254706143886"
+                    href="https://wa.me/+254180334423"
                     className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full inline-flex items-center transition-colors"
                   >
                     <MessageCircle className="mr-2 w-4 h-4" />
@@ -116,7 +116,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="tel:+254706143886"
+                  href="tel:+254180334423"
                   className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full inline-flex items-center transition-colors font-semibold flex-1 justify-center min-w-fit"
                 >
                   <Phone className="mr-2 w-5 h-5" />

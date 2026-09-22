@@ -22,7 +22,7 @@ export function HeroSection() {
   }, []);
 
   const whatsappMessage = "Hi, I'd like to book a physio session";
-  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/254180334423?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section role="banner" className="relative py-8 md:py-10 flex items-center">
@@ -129,7 +129,7 @@ export function HeroSection() {
               <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
-              href="tel:+254706143886"
+              href="tel:+254180334423"
               aria-label="Call now to book your physiotherapy session"
               className="group bg-white/20 hover:bg-white/30 backdrop-blur-md text-white px-8 py-4 rounded-full inline-flex items-center transition-all duration-300 hover:shadow-lg border border-white/30 font-semibold text-lg"
             >

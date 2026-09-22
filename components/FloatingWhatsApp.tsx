@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function FloatingWhatsApp() {
   const whatsappMessage = "Hi, I'd like to book a physio session";
-  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/254180334423?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <motion.a

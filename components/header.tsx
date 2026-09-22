@@ -27,7 +27,7 @@ import {
 const Header = () => {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const whatsappMessage = "Hi, I'd like to book a physio session";
-  const whatsappLink = `https://wa.me/254706143886?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/254180334423?text=${encodeURIComponent(whatsappMessage)}`;
   
   return (
     <>
@@ -39,11 +39,11 @@ const Header = () => {
               <MapPin className="text-blue-600 w-4 h-4 mr-2" />
               <span className="text-sm">Princess Park Apartments</span>
             </a>
-            <a href="tel:+254706143886" className="text-white flex items-center hover:text-blue-200 transition-colors">
+            <a href="tel:+254180334423" className="text-white flex items-center hover:text-blue-200 transition-colors">
               <Phone className="text-blue-600 w-4 h-4 mr-2" />
               <div className="flex flex-col">
                 <span className="text-sm font-medium">Call to Book Sessions</span>
-                <span className="text-xs text-blue-200">+254 706 143 886</span>
+                <span className="text-xs text-blue-200">+254 180 334423</span>
               </div>
             </a>
             <a href="/contact" className="text-white flex items-center">
@@ -192,7 +192,7 @@ const Header = () => {
                 WhatsApp
               </Button>
             </a>
-            <a href="tel:+254706143886">
+            <a href="tel:+254180334423">
               <Button
                 className="rounded-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-1"
               >
@@ -294,11 +294,11 @@ const Header = () => {
                     <MapPin className="text-blue-600 w-4 h-4 mr-2" />
                     <span className="text-sm">Find A Location</span>
                   </a>
-                  <a href="tel:+254706143886" className="flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 rounded-lg transition-colors">
+                  <a href="tel:+254180334423" className="flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 rounded-lg transition-colors">
                     <Phone className="text-green-600 w-4 h-4 mr-2" />
                     <div className="flex flex-col">
                       <span className="text-sm font-medium text-green-700">Call to Book Now</span>
-                      <span className="text-xs text-gray-500">+254 706 143 886</span>
+                      <span className="text-xs text-gray-500">+254 180 334423</span>
                     </div>
                   </a>
                   <a href="#" className="flex items-center px-4 py-2 text-gray-700">
@@ -316,7 +316,7 @@ const Header = () => {
                       WhatsApp Now
                     </Button>
                   </a>
-                  <a href="tel:+254706143886" className="block">
+                  <a href="tel:+254180334423" className="block">
                     <Button
                       className="w-full rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-2"
                     >
